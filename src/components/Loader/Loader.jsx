@@ -1,18 +1,21 @@
-import { FidgetSpinner } from  'react-loader-spinner'
+import { FidgetSpinner } from "react-loader-spinner";
+import { LoaderWrapper } from "./LoaderStyled";
 // import { Circles } from 'react-loader-spinner';
 const Loader = () => {
   return (
-    <FidgetSpinner
-    visible={true}
-    height="80"
-    width="80"
-    ariaLabel="dna-loading"
-    wrapperStyle={{}}
-    wrapperClass="dna-wrapper"
-    ballColors={['#ff0000', '#00ff00', '#0000ff']}
-    backgroundColor= "var(--violet)"
-  />
-  )
-}
+    <LoaderWrapper>
+      <FidgetSpinner
+        visible={true}        
+        ariaLabel="dna-loading"
+        wrapperStyle={{}}
+        // wrapperClass="dna-wrapper"
+        ballColors={["#ff0000", "#00ff00", "#0000ff"]}
+        backgroundColor="var(--violet)"
+        height="120"
+        width="120"
+      />
+    </LoaderWrapper>
+  );
+};
 
-export default Loader
+export default Loader;

@@ -4,7 +4,7 @@ export const BtnUpS = styled.button`
   outline: 1px solid var(--blue-hover);
   position: fixed;  
   right: 10px;  
-  bottom: 10px;  
+  bottom: 10px;    
   display: inline-block;
   width: 64px;
   height: 64px;
@@ -24,6 +24,7 @@ export const BtnUpS = styled.button`
     outline: 1px solid var(--blue-normal);
   }
 
+ 
   @media (min-width: 500px) {
     right: 20px;
   }

@@ -1,4 +1,4 @@
-import BtnUp from "../Buttons/BtnUp/BtnUp";
+// import BtnUp from "../Buttons/BtnUp/BtnUp";
 
 
 const AllProjects = () => {
@@ -55,7 +55,7 @@ const AllProjects = () => {
       >
         10
       </div>
-      <BtnUp/>
+      {/* <BtnUp/> */}
     </div>
   );
 };

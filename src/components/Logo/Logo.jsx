@@ -4,8 +4,7 @@ const Logo = () => {
   return (
     <>
       <FidgetSpinner        
-        visible={true}
-        
+        visible={true}        
         ariaLabel="dna-loading"
         wrapperStyle={{}}        
         wrapperClass="dna-wrapper"
@@ -13,7 +12,7 @@ const Logo = () => {
         // backgroundColor="#6302d1"
         backgroundColor="var(--violet)"
         height="40"
-        width="40"
+        width="40"        
       />
     </>
   );

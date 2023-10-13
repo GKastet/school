@@ -23,10 +23,12 @@ export const AllIconBox = styled.ul`
   gap: 20px;
 `;
 export const SingleIconBox = styled.li`
-  /* width: 24px;
-  height: 24px; */
-  width: 40px;
-  height: 40px;
+  width: 28px;
+  height: 28px;
+  @media (min-width: 744px){    
+    width: 40px;
+    height: 40px;    
+  }
 `;
 
 export const IconLink = styled(Link)``;
