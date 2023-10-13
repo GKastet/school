@@ -10,7 +10,7 @@ const Loader = () => {
     wrapperStyle={{}}
     wrapperClass="dna-wrapper"
     ballColors={['#ff0000', '#00ff00', '#0000ff']}
-    backgroundColor="#F4442E"
+    backgroundColor= "var(--violet)"
   />
   )
 }

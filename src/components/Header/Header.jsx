@@ -28,6 +28,7 @@ const Header = () => {
             to="https://www.instagram.com/vity.ukr/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="instagram"
           >
             <AiOutlineInstagramS />
           </IconLink>
@@ -37,15 +38,17 @@ const Header = () => {
             to="https://t.me/vityel"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="telegram"
           >
             <FaTelegramPlaneS />
           </IconLink>
         </SingleIconBox>
         <SingleIconBox>
           <IconLink
-            to="#"
+            href="mailto:liza.goncharenko@gmail.com"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noreferrer noopener"
+            aria-label="mail"
           >
             <TbMailS />
           </IconLink>
