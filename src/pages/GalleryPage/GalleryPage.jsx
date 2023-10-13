@@ -1,8 +1,12 @@
+import { PageWrapper } from "../../CSS/GeneralCSS";
+import BtnUp from "../../components/Buttons/BtnUp/BtnUp";
+
 const GalleryPage = () => {
   return (
-    <>
-      <h2>GalleryPage</h2>      
-    </>
+    <PageWrapper>
+      <h2>GalleryPage</h2>
+      <BtnUp/>      
+    </PageWrapper>
   );
 };
 

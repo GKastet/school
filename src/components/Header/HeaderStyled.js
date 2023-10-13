@@ -6,24 +6,52 @@ import { TbMail } from "react-icons/tb";
 
 export const HeaderWrapperS = styled.header`
   outline: 1px solid red;
+  width: 100%;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+`;
+
+export const NavigationWrapper = styled.div`
+  outline: 1px solid green;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 20px;
+  width: 100%;
+  @media (min-width: 744px) and (max-width: 1279px) {    
+    max-width: 740px;
+  }
+  @media (min-width: 1280px){    
+    max-width: 1280px;
+  }
 `;
 
 export const LinkWrapper = styled.div`
   display: flex;
-  gap: 40px;
+  gap: 20px;
+  @media (min-width: 744px){    
+    gap: 40px;
+  }
 `;
 
 export const LinkHS = styled(Link)`
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 700;
   transition: color 350ms linear;
   color: var(--violet);
 
   &:hover {
     color: red;
+  }
+  @media (min-width: 744px){    
+    font-size: 18px;   
   }
 `;
 
@@ -32,10 +60,12 @@ export const AllIconBox = styled.ul`
   gap: 20px;
 `;
 export const SingleIconBox = styled.li`
-  /* width: 24px;
-  height: 24px; */
-  width: 40px;
-  height: 40px;
+  width: 28px;
+  height: 28px;
+  @media (min-width: 744px){    
+    width: 40px;
+    height: 40px;    
+  }
 `;
 
 export const IconLink = styled(Link)``;
@@ -46,11 +76,11 @@ const IconStyles = `
 `;
 
 export const AiOutlineInstagramS = styled(AiOutlineInstagram)`
-  ${IconStyles}
-  fill: var(--violet);
+  ${IconStyles}  
+  fill: var(--violet);  
   transition: fill 350ms linear;
   &:hover {
-    fill: red;
+    fill: var(--red);
   }
 `;
 export const FaTelegramPlaneS = styled(FaTelegramPlane)`
@@ -58,7 +88,7 @@ export const FaTelegramPlaneS = styled(FaTelegramPlane)`
   fill: var(--violet);
   transition: fill 350ms linear;
   &:hover {
-    fill: red;
+    fill: var(--red);
   }
 `;
 export const TbMailS = styled(TbMail)`
@@ -66,7 +96,6 @@ export const TbMailS = styled(TbMail)`
   stroke: var(--violet);
   transition: stroke 350ms linear;
   &:hover {
-    stroke: red;
+    stroke: var(--red);
   }
-  
 `;

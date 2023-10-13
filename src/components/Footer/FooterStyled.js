@@ -6,6 +6,10 @@ import { TbMail } from "react-icons/tb";
 
 export const FooterWrapperS = styled.footer`
   outline: 1px solid red;
+  /* margin: 0 auto; */
+  background-color: white;
+  width: 100%;
+  /* width: 700px; */
   padding: 40px 0;
   display: flex;
   flex-direction: column;
@@ -14,15 +18,6 @@ export const FooterWrapperS = styled.footer`
   gap: 30px;
 `;
 
-export const LinkFS = styled(Link)`
-  font-size: 18px;
-  font-weight: 700;
-  transition: color 350ms linear;
-
-  &:hover {
-    color: red;
-  }
-`;
 export const AllIconBox = styled.ul`
   display: flex;
   gap: 20px;
@@ -42,7 +37,7 @@ const IconStyles = `
 `;
 
 export const AiOutlineInstagramS = styled(AiOutlineInstagram)`
-  ${IconStyles}
+  ${IconStyles}  
   fill: var(--violet);
   transition: fill 350ms linear;
   &:hover {

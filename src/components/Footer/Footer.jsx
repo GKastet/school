@@ -41,8 +41,6 @@ const Footer = () => {
             to="mailto:liza.goncharenko@gmail.com"            
             rel="nofollow"
             aria-label="mail"
-            
-            
           >
             <TbMailS />
           </IconLink>
