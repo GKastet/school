@@ -1,4 +1,4 @@
-import{u as o,j as i,T as r}from"./index-804d613e.js";const a=o.section`
+import{u as o,j as i,T as r}from"./index-0c15744d.js";const a=o.section`
   outline: 1px solid blue;
   position: relative;
   padding-top: 100px;
@@ -16,7 +16,7 @@ import{u as o,j as i,T as r}from"./index-804d613e.js";const a=o.section`
   outline: 1px solid var(--blue-hover);
   position: fixed;  
   right: 10px;  
-  bottom: 10px;  
+  bottom: 10px;    
   display: inline-block;
   width: 64px;
   height: 64px;
@@ -36,6 +36,7 @@ import{u as o,j as i,T as r}from"./index-804d613e.js";const a=o.section`
     outline: 1px solid var(--blue-normal);
   }
 
+ 
   @media (min-width: 500px) {
     right: 20px;
   }
