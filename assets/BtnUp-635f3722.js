@@ -1,4 +1,4 @@
-import{u as o,j as i,T as r}from"./index-0c15744d.js";const a=o.section`
+import{u as o,j as i,T as r}from"./index-6c10af16.js";const a=o.section`
   outline: 1px solid blue;
   position: relative;
   padding-top: 100px;
