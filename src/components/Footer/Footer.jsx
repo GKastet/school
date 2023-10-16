@@ -38,7 +38,7 @@ const Footer = () => {
         </SingleIconBox>
         <SingleIconBox>
           <IconLink
-            to="mailto:liza.goncharenko@gmail.com"            
+            to="mailto:liza.milarom@gmail.com"            
             rel="nofollow"
             aria-label="mail"
           >
