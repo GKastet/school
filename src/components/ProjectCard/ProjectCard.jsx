@@ -5,7 +5,8 @@ import {
   ProjectText,
   TextThumb,
 } from "./ProjectCardStyled";
-import AllProjectsImgs from "../AllProjects/allProjectsImgs";
+import AllProjectsImgs from "../AllProjects/AllProjectsImgs";
+
 
 const ProjectCard = ({ project }) => {
   const { projectName } = project;
