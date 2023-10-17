@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { GalleryItemLi, ImgStyled, ImgThumb } from "./GalleryItemStyled";
-// import GalleryImgsFunc from "../GalleryImgs/GalleryImgsFunc";
+ import GalleryImgsFunc from "../GalleryImgs/GalleryImgsFunc";
 
 const GalleryItem = ({ data }) => {
   console.log(data);
@@ -9,15 +9,15 @@ const GalleryItem = ({ data }) => {
     <GalleryItemLi>
       <ImgThumb>
         {/* <img src={imgSrc} alt={imgAlt} width={300} /> */}
-        <ImgStyled
+        {/* <ImgStyled
           src={imgSrc}
           alt={imgAlt}
         //   onClick={() => {
         //     onOpenModal({ id, tags, largeImageURL });
         //   }}
-        />
+        /> */}
+      <GalleryImgsFunc data={data}/>      
       </ImgThumb>
-      {/* <GalleryImgsFunc data={data}/> */}      
     </GalleryItemLi>
   );
 };
