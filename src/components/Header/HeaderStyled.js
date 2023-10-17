@@ -48,7 +48,7 @@ export const LinkHS = styled(Link)`
   color: var(--violet);
 
   &:hover {
-    color: red;
+    color: var(--hover);
   }
   @media (min-width: 744px){    
     font-size: 18px;   
@@ -80,7 +80,7 @@ export const AiOutlineInstagramS = styled(AiOutlineInstagram)`
   fill: var(--violet);  
   transition: fill 350ms linear;
   &:hover {
-    fill: var(--red);
+    fill: var(--hover);
   }
 `;
 export const FaTelegramPlaneS = styled(FaTelegramPlane)`
@@ -88,7 +88,7 @@ export const FaTelegramPlaneS = styled(FaTelegramPlane)`
   fill: var(--violet);
   transition: fill 350ms linear;
   &:hover {
-    fill: var(--red);
+    fill: var(--hover);
   }
 `;
 export const TbMailS = styled(TbMail)`
@@ -96,6 +96,6 @@ export const TbMailS = styled(TbMail)`
   stroke: var(--violet);
   transition: stroke 350ms linear;
   &:hover {
-    stroke: var(--red);
+    stroke: var(--hover);
   }
 `;

@@ -1,10 +1,21 @@
-// import BtnUp from "../Buttons/BtnUp/BtnUp";
+import { TitleS } from "../../CSS/GeneralCSS";
+import ProjectCard from "../ProjectCard/ProjectCard";
 
+import AllProjectsInfo from "./allProjects.json"
 
 const AllProjects = () => {
+    
   return (
     <div>
-      <div>AllProjects</div>
+      <TitleS>Naše Projekty</TitleS>
+      <ul style={{display: "flex", flexDirection: "column", gap: "20px"}}>
+        {
+          AllProjectsInfo?.map((project)=>(            
+            <ProjectCard key={project?.id} project={project}/>
+          ))
+        }
+      </ul>
+      
       <div
         style={{ outline: "1px solid green", width: "200px", height: "200px" }}
       >

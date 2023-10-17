@@ -14,7 +14,7 @@ import {
 import Logo from "../Logo/Logo";
 
 
-const Header = () => {
+const Header = () => {  
   return (
     <HeaderWrapperS>
       <NavigationWrapper>
@@ -22,8 +22,8 @@ const Header = () => {
           <Logo />
         </div>
         <LinkWrapper>
-          <LinkHS to="/">Home</LinkHS>
-          <LinkHS to="/gallery">Gallery</LinkHS>
+          <LinkHS to="/">Domov</LinkHS>
+          <LinkHS to="/gallery">Galéria</LinkHS>
         </LinkWrapper>
         <AllIconBox>
           <SingleIconBox>

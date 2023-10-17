@@ -25,9 +25,9 @@ export const AllIconBox = styled.ul`
 export const SingleIconBox = styled.li`
   width: 28px;
   height: 28px;
-  @media (min-width: 744px){    
+  @media (min-width: 744px) {
     width: 40px;
-    height: 40px;    
+    height: 40px;
   }
 `;
 
@@ -39,7 +39,7 @@ const IconStyles = `
 `;
 
 export const AiOutlineInstagramS = styled(AiOutlineInstagram)`
-  ${IconStyles}  
+  ${IconStyles}
   fill: var(--violet);
   transition: fill 350ms linear;
   &:hover {
@@ -60,5 +60,12 @@ export const TbMailS = styled(TbMail)`
   transition: stroke 350ms linear;
   &:hover {
     stroke: red;
+  }
+`;
+
+export const SpanS = styled.span`
+  font-size: 12px;
+  @media (min-width: 744px) {
+    font-size: 14px;
   }
 `;

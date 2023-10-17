@@ -27,11 +27,9 @@ const HomePage = () => {
   // const location = useLocation()
 
   return (
-    <PageWrapper>
-      <h2>HomePage</h2> 
+    <PageWrapper>      
       <AllProjects/>
-      {showBtnUp && <BtnUp/>}      
-      
+      {showBtnUp && <BtnUp/>}
     </PageWrapper>
   );
 };

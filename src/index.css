@@ -10,7 +10,10 @@
   --white: #fff;
   --violet: #6302d1;
   --red: #ff0000;
+  --hover:#ff0000;
   --green: #91ff1c;
+  --backgroundColor: #f7f6f6;
+  --p_color: #000;
 }
 
 * {
@@ -21,6 +24,16 @@
 
 body {
   padding: 10px;
+  background-color: var(--backgroundColor);
+  /* background-color: rgba(255, 255, 255, 1); */
+  /* background-image: url(./images/bcg1WebP.webp); */
+  /* background-image: url(./images/bcg3WebP.webp); */
+  background-image: url(./images/bcg3smallWebP.webp);
+  background-repeat: no-repeat;
+  background-position: center 100px;
+  /* background-size: cover; */
+  background-attachment: fixed;
+  
   /* background-color: lightyellow; */
 }
 
@@ -38,6 +51,10 @@ ul {
     height: 60px; /* Adjust the height for screens up to 768px */
     width: 60px; /* Adjust the width for screens up to 768px */
   }
+}
+
+img {
+  display: block;
 }
 
 /* :root {

@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "imgSrc": "/school/src/images/50WebP.webp",
+        "imgAlt": "Project foto",
+        "projectName": "Project name"
+    },
+    {
+        "id": "2",
+        "imgSrc": "/school/src/images/64WebP.webp",
+        "imgAlt": "Project foto",
+        "projectName": "Project name"
+    },
+    {
+        "id": "3",
+        "imgSrc": "/school/src/images/50WebP.webp",
+        "imgAlt": "Project foto",
+        "projectName": "Project name"
+    },
+    {
+        "id": "4",
+        "imgSrc": "/school/src/images/64WebP.webp",
+        "imgAlt": "Project foto",
+        "projectName": "Project name"
+    }    
+]

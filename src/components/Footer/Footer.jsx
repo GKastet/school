@@ -6,6 +6,7 @@ import {
   FooterWrapperS,
   IconLink,
   SingleIconBox,
+  SpanS,
   TbMailS,
 } from "./FooterStyled";
 
@@ -46,9 +47,9 @@ const Footer = () => {
           </IconLink>
         </SingleIconBox>        
       </AllIconBox>
-      <span className="bottomSpan">
-        &copy; Liza Goncharenko, 2023, All rights reserved.
-      </span>
+      <SpanS>
+        &copy; Liza Gončarenko, 2023, Všetky práva vyhradené.
+      </SpanS>
     </FooterWrapperS>
   );
 };
