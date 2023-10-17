@@ -10,8 +10,8 @@ const GalleryImgsFunc = ({data}) => {
         case "1":
           return (
               <img
-                // src={`${Img1}`}
-                src={data.imgSrc}
+                src={`${Img1}`}
+                // src={data.imgSrc}
                 alt={imgAlt}
                 style={imgStyle}                
                 type="image/webp"
