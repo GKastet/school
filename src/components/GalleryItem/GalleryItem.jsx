@@ -3,7 +3,7 @@ import { GalleryItemLi, ImgStyled, ImgThumb } from "./GalleryItemStyled";
 // import GalleryImgsFunc from "../GalleryImgs/GalleryImgsFunc";
 
 const GalleryItem = ({ data }) => {
-  // console.log(data);
+  console.log(data);
   const { imgSrc, imgAlt } = data;
   return (
     <GalleryItemLi>
