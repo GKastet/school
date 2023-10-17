@@ -1,4 +1,4 @@
-import{u as r,g as l,j as n,T as m}from"./index-73f0cb3e.js";const d="/school/assets/bcg1WebP-b6ce7dc7.webp",R=r.section`
+import{u as r,g as l,j as n,T as m}from"./index-3f8d700f.js";const d="/school/assets/bcg1WebP-b6ce7dc7.webp",R=r.section`
   outline: 1px solid blue;
   position: relative;
   padding-top: 100px;
@@ -18,7 +18,7 @@ display: block;
 text-align: center;
 margin-bottom: 30px;
 font-size: 30px;
-`;var p={exports:{}},h="SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED",x=h,u=x;function a(){}function s(){}s.resetWarningCache=a;var g=function(){function e(T,f,v,w,P,c){if(c!==u){var i=new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");throw i.name="Invariant Violation",i}}e.isRequired=e;function o(){return e}var t={array:e,bigint:e,bool:e,func:e,number:e,object:e,string:e,symbol:e,any:e,arrayOf:o,element:e,elementType:e,instanceOf:o,node:e,objectOf:o,oneOf:o,oneOfType:o,shape:o,exact:o,checkPropTypes:s,resetWarningCache:a};return t.PropTypes=t,t};p.exports=g();var b=p.exports;const _=l(b),y=r.button`
+`;var p={exports:{}},h="SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED",x=h,u=x;function a(){}function s(){}s.resetWarningCache=a;var b=function(){function e(T,f,w,v,P,c){if(c!==u){var i=new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");throw i.name="Invariant Violation",i}}e.isRequired=e;function o(){return e}var t={array:e,bigint:e,bool:e,func:e,number:e,object:e,string:e,symbol:e,any:e,arrayOf:o,element:e,elementType:e,instanceOf:o,node:e,objectOf:o,oneOf:o,oneOfType:o,shape:o,exact:o,checkPropTypes:s,resetWarningCache:a};return t.PropTypes=t,t};p.exports=b();var g=p.exports;const _=l(g),O="/school/assets/50WebP-4b63c187.webp",W="/school/assets/64WebP-5977da9e.webp",y=r.button`
   outline: 1px solid var(--blue-hover);
   position: fixed;  
   right: 10px;  
@@ -58,4 +58,4 @@ font-size: 30px;
   @media (min-width: 1280px){
     right: 40px;
   }  
-`,O=()=>{function e(){window.scrollTo({top:0,behavior:"smooth"})}return n.jsx(y,{type:"button",onClick:e,children:n.jsx(m,{size:40})})};export{O as B,_ as P,S as T,R as a};
+`,E=()=>{function e(){window.scrollTo({top:0,behavior:"smooth"})}return n.jsx(y,{type:"button",onClick:e,children:n.jsx(m,{size:40})})};export{E as B,W as I,_ as P,S as T,O as a,R as b};
