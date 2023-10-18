@@ -1,4 +1,4 @@
-import{u as r,g as l,j as n,T as m}from"./index-85a21934.js";const d="/school/assets/bcg1WebP-b6ce7dc7.webp",R=r.section`
+import{u as r,g as l,j as n,T as m}from"./index-c2fb6ac1.js";const d="/school/assets/bcg1WebP-b6ce7dc7.webp",R=r.section`
   outline: 1px solid blue;
   position: relative;
   padding-top: 100px;
