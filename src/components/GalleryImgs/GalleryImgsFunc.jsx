@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import Img1 from "../../images/50WebP.webp";
 import Img2 from "../../images/64WebP.webp";
+import ImgTest from "../../../public/images/64WebP.webp"
 
 const GalleryImgsFunc = ({ data }) => {
   console.log(data);
@@ -10,8 +11,9 @@ const GalleryImgsFunc = ({ data }) => {
     case "1":
       return (
         <img
-          src={`${Img1}`}
+          // src={`${Img1}`}
           // src={data.imgSrc}
+          src={`${ImgTest}`}
           alt={imgAlt}
           style={imgStyle}
           type="image/webp"
