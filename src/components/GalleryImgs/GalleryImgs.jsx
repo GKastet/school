@@ -11,6 +11,7 @@ const GalleryImgs = () => {
           <GalleryItem key={image.id} data={image} />
         ))}
       </ul>
+      <img src="/images/64WebP.webp"/>
     </>
   );
 };
