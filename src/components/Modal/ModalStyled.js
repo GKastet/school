@@ -16,5 +16,7 @@ export const ModalStyled = styled.div`
     max-height: calc(100vh - 24px); */
     max-width: calc(100vw - 100px);
     max-height: calc(100vh - 50px);
+    overflow: hidden;
+    border-radius: 20px;
   }
 `;

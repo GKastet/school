@@ -7,9 +7,12 @@ import ImgList from "./galleryImgsList.json";
 const GalleryImgs = () => {
   const [modal, setModal] = useState({
     isOpen: false,
-    modalData: null,
+    modalData: null,    
   })
+  // const [imageId, setImageId] =useState(null)
+  
 console.log(modal);
+
   const onOpenModal = data => {
     // console.log("ok");
     setModal({ isOpen: true, modalData: data });
@@ -17,16 +20,17 @@ console.log(modal);
 
   const onCloseModal = () => setModal({ isOpen: false, modalData: null });
 
+  
   return (
     <>
       <TitleS>Galéria</TitleS>
       <ul style={{display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "20px", paddingBottom: "20px"}}>
-        {ImgList?.map((image) => (
-          <GalleryItem key={image.id} data={image} onOpenModal={onOpenModal}/>
+        {ImgList?.map((image, index) => (
+          <GalleryItem key={image.id} data={image} index={index} onOpenModal={onOpenModal}/>
         ))}
       </ul>
       {modal.isOpen && <Modal onCloseModal={onCloseModal} modalData={modal.modalData}/>}
-    </>
+    </>        
   );
 };
 

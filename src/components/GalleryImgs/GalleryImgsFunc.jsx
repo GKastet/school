@@ -11,10 +11,7 @@ const GalleryImgsFunc = ({ data, onOpenModal }) => {
     case "1":
       return (
         <img
-          src={`${Img1}`}
-          // src={data.imgSrc}
-          // src={`${ImgTest}`}
-          // src='/school/public/images/64WebP.webp'
+          src={`${Img1}`}          
           alt={imgAlt}
           style={imgStyle}
           type="image/webp"
@@ -22,6 +19,7 @@ const GalleryImgsFunc = ({ data, onOpenModal }) => {
           onClick={() => {
             onOpenModal({ id });
           }}
+          
         />
       );
 
@@ -36,6 +34,7 @@ const GalleryImgsFunc = ({ data, onOpenModal }) => {
           onClick={() => {
             onOpenModal({ id });
           }}
+          
         />
       );
     case "3":
@@ -76,9 +75,9 @@ const imgStyle = {
 GalleryImgsFunc.propTypes = {
   data: PropTypes.shape({
     id: PropTypes.string.isRequired,
-    imgAlt: PropTypes.string.isRequired,
+    imgAlt: PropTypes.string,
   }).isRequired,
-  onOpenModal: PropTypes.func.isRequired,
+  onOpenModal: PropTypes.func,
 };
 
 export default GalleryImgsFunc;

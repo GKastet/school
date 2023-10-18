@@ -1,9 +1,12 @@
 import PropTypes from 'prop-types';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { ModalStyled } from './ModalStyled';
 import GalleryImgsFunc from '../GalleryImgs/GalleryImgsFunc';
 
 const Modal = ({ onCloseModal, modalData }) => {
+
+const [imageId, setImageId] = useState(Number(modalData.id))
+// console.log("imageId", imageId);
 
   const handleClickOverlay = event => {
     if (event.target === event.currentTarget) {
@@ -23,11 +26,36 @@ const Modal = ({ onCloseModal, modalData }) => {
     };
   }, [onCloseModal]);
 
+  const handlePrevImage = () =>{
+    if(imageId === 1) return    
+    setImageId(imageId-1)
+  }
+
+  const handleNextImage =() =>{
+    if(imageId === 4){
+      alert("max image")
+      return
+    }     
+    setImageId(imageId+1)
+  }
+
+  const handleBtnClose =()=>{
+    console.log("close");
+    onCloseModal();
+  }
+
+  const newModalData = {
+    id: imageId.toString(),
+  }
+
   return (
-    <ModalStyled className="overlay" onClick={handleClickOverlay}>
-      <div className="modal">        
-        <GalleryImgsFunc data={modalData}/>
+    <ModalStyled onClick={handleClickOverlay}>
+      <button type='button' onClick={handlePrevImage}>prev</button>
+      <div>        
+        <GalleryImgsFunc data={newModalData}/>
       </div>
+      <button type='button' onClick={handleNextImage}>next</button>
+      <button type='button' onClick={handleBtnClose}>close</button>
     </ModalStyled>
   );
 }

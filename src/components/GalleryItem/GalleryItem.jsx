@@ -2,11 +2,11 @@ import PropTypes from "prop-types";
 import { GalleryItemLi, ImgThumb } from "./GalleryItemStyled";
 import GalleryImgsFunc from "../GalleryImgs/GalleryImgsFunc";
 
-const GalleryItem = ({ data, onOpenModal }) => {
-  // console.log(data);  
+const GalleryItem = ({ data, index, onOpenModal }) => {
+  // console.log(data);
   return (
     <GalleryItemLi>
-      <ImgThumb>        
+      <ImgThumb>
         <GalleryImgsFunc data={data} onOpenModal={onOpenModal}/>
       </ImgThumb>
     </GalleryItemLi>
@@ -22,3 +22,4 @@ GalleryItem.propTypes = {
 };
 
 export default GalleryItem;
+
