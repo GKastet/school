@@ -27,7 +27,7 @@ const GalleryPage = () => {
     <PageWrapper>
       <BtnBack/>
       <GalleryImgs/>      
-      {showBtnUp && <BtnUp/>}            
+      {showBtnUp && <BtnUp/>}               
     </PageWrapper>
   );
 };

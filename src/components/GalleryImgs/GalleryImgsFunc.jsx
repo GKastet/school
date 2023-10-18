@@ -1,23 +1,27 @@
 import PropTypes from "prop-types";
 import Img1 from "../../images/50WebP.webp";
 import Img2 from "../../images/64WebP.webp";
-import ImgTest from "../../../public/images/64WebP.webp"
+// import ImgTest from "../../../public/images/64WebP.webp"
 
-const GalleryImgsFunc = ({ data }) => {
-  console.log(data);
+const GalleryImgsFunc = ({ data, onOpenModal }) => {
+  // console.log(data);
   const { id, imgAlt } = data;
 
   switch (id) {
     case "1":
       return (
         <img
-          // src={`${Img1}`}
+          src={`${Img1}`}
           // src={data.imgSrc}
-          src={`${ImgTest}`}
+          // src={`${ImgTest}`}
+          // src='/school/public/images/64WebP.webp'
           alt={imgAlt}
           style={imgStyle}
           type="image/webp"
           loading="lazy"
+          onClick={() => {
+            onOpenModal({ id });
+          }}
         />
       );
 
@@ -29,6 +33,9 @@ const GalleryImgsFunc = ({ data }) => {
           style={imgStyle}
           type="image/webp"
           loading="lazy"
+          onClick={() => {
+            onOpenModal({ id });
+          }}
         />
       );
     case "3":
@@ -71,6 +78,7 @@ GalleryImgsFunc.propTypes = {
     id: PropTypes.string.isRequired,
     imgAlt: PropTypes.string.isRequired,
   }).isRequired,
+  onOpenModal: PropTypes.func.isRequired,
 };
 
 export default GalleryImgsFunc;

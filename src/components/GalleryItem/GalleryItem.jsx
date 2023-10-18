@@ -1,22 +1,13 @@
 import PropTypes from "prop-types";
-import { GalleryItemLi, ImgStyled, ImgThumb } from "./GalleryItemStyled";
- import GalleryImgsFunc from "../GalleryImgs/GalleryImgsFunc";
+import { GalleryItemLi, ImgThumb } from "./GalleryItemStyled";
+import GalleryImgsFunc from "../GalleryImgs/GalleryImgsFunc";
 
-const GalleryItem = ({ data }) => {
-  console.log(data);
-  const { imgSrc, imgAlt } = data;
+const GalleryItem = ({ data, onOpenModal }) => {
+  // console.log(data);  
   return (
     <GalleryItemLi>
-      <ImgThumb>
-        {/* <img src={imgSrc} alt={imgAlt} width={300} /> */}
-        {/* <ImgStyled
-          src={imgSrc}
-          alt={imgAlt}
-        //   onClick={() => {
-        //     onOpenModal({ id, tags, largeImageURL });
-        //   }}
-        /> */}
-      <GalleryImgsFunc data={data}/>      
+      <ImgThumb>        
+        <GalleryImgsFunc data={data} onOpenModal={onOpenModal}/>
       </ImgThumb>
     </GalleryItemLi>
   );
@@ -27,6 +18,7 @@ GalleryItem.propTypes = {
     imgSrc: PropTypes.string.isRequired,
     imgAlt: PropTypes.string.isRequired,
   }).isRequired,
+  onOpenModal: PropTypes.func.isRequired,
 };
 
 export default GalleryItem;
