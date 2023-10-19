@@ -1,4 +1,4 @@
-import{u as a,j as e,G as x,r as c,L as C}from"./index-5126122d.js";import{P as n,I as d,a as p,T as S,b as P,B as R}from"./BtnUp-820c8554.js";const z=a.li`
+import{u as a,j as e,G as x,r as c,L as C}from"./index-07c04f88.js";import{P as n,I as d,a as p,T as S,b as P,B as R}from"./BtnUp-6e4a8dd0.js";const z=a.li`
   border-radius: 20px;
   /* box-shadow: none; */
   transition: all 1000 ms linear;  
