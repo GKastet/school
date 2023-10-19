@@ -1,4 +1,4 @@
-import{u as l,j as e,r as d}from"./index-c369156e.js";import{P as r,I as a,a as p,T as h,b as m,B as g}from"./BtnUp-372f8754.js";const u=l.div`
+import{u as l,j as e,r as d}from"./index-5126122d.js";import{P as r,I as a,a as p,T as h,b as m,B as g}from"./BtnUp-820c8554.js";const u=l.div`
 outline: 1px solid red;
 background-color: rgba(255, 255, 255, 0.8);
 /* background-color: rgba(0, 0, 0, 0.3); */
