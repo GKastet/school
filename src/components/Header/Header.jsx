@@ -48,7 +48,7 @@ const Header = () => {
           </SingleIconBox>
           <SingleIconBox>
             <IconLink
-              href="mailto:liza.milarom@gmail.com"
+              to="mailto:liza.milarom@gmail.com"  
               target="_blank"
               rel="noreferrer noopener"
               aria-label="mail"
