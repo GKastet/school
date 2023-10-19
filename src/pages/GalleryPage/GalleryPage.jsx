@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { PageWrapper } from "../../CSS/GeneralCSS";
 import BtnUp from "../../components/Buttons/BtnUp/BtnUp";
-import BtnBack from "../../components/Buttons/BtnUp/BtnBack/BtnBack";
 import GalleryImgs from "../../components/GalleryImgs/GalleryImgs";
+import BtnBack from "../../components/Buttons/BtnBack/BtnBack";
 
 const GalleryPage = () => {
   

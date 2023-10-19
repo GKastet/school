@@ -11,10 +11,9 @@ const GalleryImgs = () => {
   })
   // const [imageId, setImageId] =useState(null)
   
-console.log(modal);
+// console.log(modal);
 
-  const onOpenModal = data => {
-    // console.log("ok");
+  const onOpenModal = data => {    
     setModal({ isOpen: true, modalData: data });
   };
 
@@ -25,11 +24,11 @@ console.log(modal);
     <>
       <TitleS>Galéria</TitleS>
       <ul style={{display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "20px", paddingBottom: "20px"}}>
-        {ImgList?.map((image, index) => (
-          <GalleryItem key={image.id} data={image} index={index} onOpenModal={onOpenModal}/>
+        {ImgList?.map((image) => (
+          <GalleryItem key={image.id} data={image} onOpenModal={onOpenModal}/>
         ))}
       </ul>
-      {modal.isOpen && <Modal onCloseModal={onCloseModal} modalData={modal.modalData}/>}
+      {modal.isOpen && <Modal onCloseModal={onCloseModal} modal={modal}/>}
     </>        
   );
 };

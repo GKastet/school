@@ -11,6 +11,7 @@ export const ModalStyled = styled.div`
   align-items: center;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 1200;
+  
   div {
     /* max-width: calc(100vw - 48px);
     max-height: calc(100vh - 24px); */
@@ -20,3 +21,4 @@ export const ModalStyled = styled.div`
     border-radius: 20px;
   }
 `;
+

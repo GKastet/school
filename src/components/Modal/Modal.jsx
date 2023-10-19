@@ -1,68 +1,60 @@
-import PropTypes from 'prop-types';
-import { useEffect, useState } from 'react';
-import { ModalStyled } from './ModalStyled';
-import GalleryImgsFunc from '../GalleryImgs/GalleryImgsFunc';
+import PropTypes from "prop-types";
+import { useEffect, useState } from "react";
+import { ModalStyled } from "./ModalStyled";
+import GalleryImgsFunc from "../GalleryImgs/GalleryImgsFunc";
+import BtnClose from "../Buttons/BtnClose/BtnClose";
+import BtnPrev from "../Buttons/BtnPrev/BtnPrev";
+import BtnNext from "../Buttons/BtnNext/BtnNext";
 
-const Modal = ({ onCloseModal, modalData }) => {
 
-const [imageId, setImageId] = useState(Number(modalData.id))
-// console.log("imageId", imageId);
-
-  const handleClickOverlay = event => {
-    if (event.target === event.currentTarget) {
-      onCloseModal();
-    }
-  };
-
+const Modal = ({ onCloseModal, modal }) => {
+// console.log(modal);
+  const { isOpen, modalData } = modal;
+  const [imageId, setImageId] = useState(Number(modalData.id));
+  
   useEffect(() => {
-    const handleKeyDown = event => {
-      if (event.code === 'Escape') {
+    if (!isOpen) return;
+
+    document.body.classList.add("no-scroll");
+
+    const handleKeyDown = (event) => {
+      if (event.code === "Escape") {
+        document.body.classList.remove("no-scroll");
         onCloseModal();
       }
     };
-    window.addEventListener('keydown', handleKeyDown);
+    window.addEventListener("keydown", handleKeyDown);
     return () => {
-      window.removeEventListener('keydown', handleKeyDown);
+      window.removeEventListener("keydown", handleKeyDown);
     };
-  }, [onCloseModal]);
+  }, [isOpen, onCloseModal]);
 
-  const handlePrevImage = () =>{
-    if(imageId === 1) return    
-    setImageId(imageId-1)
-  }
-
-  const handleNextImage =() =>{
-    if(imageId === 4){
-      alert("max image")
-      return
-    }     
-    setImageId(imageId+1)
-  }
-
-  const handleBtnClose =()=>{
-    console.log("close");
-    onCloseModal();
-  }
+  const handleClickOverlay = (event) => {
+    if (event.target === event.currentTarget) {
+      document.body.classList.remove("no-scroll");
+      onCloseModal();
+    }
+  };  
 
   const newModalData = {
     id: imageId.toString(),
-  }
+  };
 
   return (
-    <ModalStyled onClick={handleClickOverlay}>
-      <button type='button' onClick={handlePrevImage}>prev</button>
-      <div>        
-        <GalleryImgsFunc data={newModalData}/>
-      </div>
-      <button type='button' onClick={handleNextImage}>next</button>
-      <button type='button' onClick={handleBtnClose}>close</button>
+    <ModalStyled onClick={handleClickOverlay}>      
+      <div style={{ position: "relative" }}>
+        <GalleryImgsFunc data={newModalData} isOpen={modal.isOpen}/>
+        <BtnClose onCloseModal={onCloseModal} />
+        <BtnPrev imageId={imageId} setImageId={setImageId}/>
+        <BtnNext imageId={imageId} setImageId={setImageId}/>
+      </div>      
     </ModalStyled>
   );
-}
+};
 
 Modal.propTypes = {
   onCloseModal: PropTypes.func.isRequired,
-  modalData: PropTypes.object.isRequired,
+  modal: PropTypes.object.isRequired,
 };
 
 export default Modal;

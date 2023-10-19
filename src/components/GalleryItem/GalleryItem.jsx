@@ -2,8 +2,8 @@ import PropTypes from "prop-types";
 import { GalleryItemLi, ImgThumb } from "./GalleryItemStyled";
 import GalleryImgsFunc from "../GalleryImgs/GalleryImgsFunc";
 
-const GalleryItem = ({ data, index, onOpenModal }) => {
-  // console.log(data);
+const GalleryItem = ({ data, onOpenModal }) => {
+  // console.log(isOpen);
   return (
     <GalleryItemLi>
       <ImgThumb>
@@ -18,6 +18,7 @@ GalleryItem.propTypes = {
     imgSrc: PropTypes.string.isRequired,
     imgAlt: PropTypes.string.isRequired,
   }).isRequired,
+  // isOpen: PropTypes.bool.isRequired,
   onOpenModal: PropTypes.func.isRequired,
 };
 

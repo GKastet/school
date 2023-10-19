@@ -1,61 +1,119 @@
 import PropTypes from "prop-types";
 import Img1 from "../../images/50WebP.webp";
 import Img2 from "../../images/64WebP.webp";
+import { ImgTagS, ImgTagSModal } from "./GalleryImgsFuncStyled";
 // import ImgTest from "../../../public/images/64WebP.webp"
 
-const GalleryImgsFunc = ({ data, onOpenModal }) => {
-  // console.log(data);
+const GalleryImgsFunc = ({ data, isOpen = false, onOpenModal }) => {
+  // console.log('onOpenModal: ', onOpenModal);
+  // console.log("galleryFunc", isOpen);
   const { id, imgAlt } = data;
 
   switch (id) {
     case "1":
       return (
-        <img
-          src={`${Img1}`}          
-          alt={imgAlt}
-          style={imgStyle}
-          type="image/webp"
-          loading="lazy"
-          onClick={() => {
-            onOpenModal({ id });
-          }}
-          
-        />
+        <>
+          {!isOpen ? (
+            <ImgTagS
+              src={`${Img1}`}
+              alt={imgAlt}
+              type="image/webp"
+              loading="lazy"
+              onClick={() => {
+                onOpenModal({ id });
+              }}
+            />
+          ) : (
+            <ImgTagSModal
+              src={`${Img1}`}
+              alt={imgAlt}
+              type="image/webp"
+              loading="lazy"
+              onClick={() => {
+                onOpenModal({ id });
+              }}
+            />
+          )}
+        </>
       );
 
     case "2":
       return (
-        <img
-          src={`${Img2}`}
-          alt={imgAlt}
-          style={imgStyle}
-          type="image/webp"
-          loading="lazy"
-          onClick={() => {
-            onOpenModal({ id });
-          }}
-          
-        />
+        <>
+          {!isOpen ? (
+            <ImgTagS
+              src={`${Img2}`}
+              alt={imgAlt}
+              type="image/webp"
+              loading="lazy"
+              onClick={() => {
+                onOpenModal({ id });
+              }}
+            />
+          ) : (
+            <ImgTagSModal
+              src={`${Img2}`}
+              alt={imgAlt}
+              type="image/webp"
+              loading="lazy"
+              onClick={() => {
+                onOpenModal({ id });
+              }}
+            />
+          )}
+        </>
       );
     case "3":
       return (
-        <img
-          src={`${Img1}`}
-          alt={imgAlt}
-          style={imgStyle}
-          type="image/webp"
-          loading="lazy"
-        />
+        <>
+          {!isOpen ? (
+            <ImgTagS
+              src={`${Img1}`}
+              alt={imgAlt}
+              type="image/webp"
+              loading="lazy"
+              onClick={() => {
+                onOpenModal({ id });
+              }}
+            />
+          ) : (
+            <ImgTagSModal
+              src={`${Img1}`}
+              alt={imgAlt}
+              type="image/webp"
+              loading="lazy"
+              onClick={() => {
+                onOpenModal({ id });
+              }}
+            />
+          )}
+        </>
       );
     case "4":
-      return (
-        <img
-          src={`${Img2}`}
-          alt={imgAlt}
-          style={imgStyle}
-          type="image/webp"
-          loading="lazy"
-        />
+      return (        
+        <>
+          {!isOpen ? (
+            <ImgTagS
+              src={`${Img2}`}
+              alt={imgAlt}
+              type="image/webp"
+              loading="lazy"
+              onClick={() => {
+                onOpenModal({ id });
+              }}
+            />
+          ) : (
+            <ImgTagSModal
+              src={`${Img2}`}
+              alt={imgAlt}
+              type="image/webp"
+              loading="lazy"
+              onClick={() => {
+                onOpenModal({ id });
+              }}
+            />
+          )}
+        </>
       );
 
     default:
@@ -63,20 +121,25 @@ const GalleryImgsFunc = ({ data, onOpenModal }) => {
   }
 };
 
-const imgStyle = {
-  width: "100%",
-  // maxWidth: "100%",
-  height: "100%",
-  // objectFit: "contain",
-  objectFit: "cover",
-  // display: "block",
-};
+// const imgStyle = {
+//   width: "100%",
+//   // maxWidth: "100%",
+//   height: "100%",
+//   // objectFit: "contain",
+//   objectFit: "cover",
+//   '&:hover':{
+//     width: '100px',
+//     // scale: '1.2',
+//     transform: 'scale(1.2)',
+//   }
+// };
 
 GalleryImgsFunc.propTypes = {
   data: PropTypes.shape({
     id: PropTypes.string.isRequired,
     imgAlt: PropTypes.string,
   }).isRequired,
+  isOpen: PropTypes.bool,
   onOpenModal: PropTypes.func,
 };
 

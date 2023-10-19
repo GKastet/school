@@ -14,6 +14,8 @@
   --green: #91ff1c;
   --backgroundColor: #f7f6f6;
   --p_color: #000;
+
+  
 }
 
 * {
@@ -55,6 +57,10 @@ ul {
 
 img {
   display: block;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 /* :root {
