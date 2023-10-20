@@ -23,12 +23,10 @@ const ProjectCard = ({ project }) => {
       <CardOverlay className="card-overlay" to="/gallery">navštíviť galériu</CardOverlay>
       </ImgOverlay>
       <TextThumb>
-        <h3 style={{ textAlign: "center", color: "blue" }}>{projectName}</h3>
+        <h3 style={{ fontSize: '28px', textAlign: "center", color: 'white' }}>{projectName}</h3>
         <ProjectText>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel atque
-          excepturi maiores nemo eum consequuntur sunt. Temporibus, vel rerum,
-          molestiae, in laborum minus expedita rem excepturi hic exercitationem
-          ipsam labore?
+          excepturi maiores nemo eum consequuntur sunt.
         </ProjectText>
       </TextThumb>
       

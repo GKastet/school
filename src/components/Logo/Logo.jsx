@@ -10,7 +10,7 @@ const Logo = () => {
         wrapperClass="dna-wrapper"
         ballColors={["#ff0000", "#00ff00", "#0000ff"]}
         // backgroundColor="#6302d1"
-        backgroundColor="var(--violet)"
+        backgroundColor="var(--mainNavLogo)"
         height="40"
         width="40"        
       />

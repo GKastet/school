@@ -10,10 +10,18 @@
   --white: #fff;
   --violet: #6302d1;
   --red: #ff0000;
-  --hover:#ff0000;
+
+  /* --hover:#ffba00; */
+  --hover:#ff5991;
+
   --green: #91ff1c;
-  --backgroundColor: #f7f6f6;
+  --backgroundColor: #b27bc1;
   --p_color: #000;
+  /* #b27bc1 */
+  /* --backgroundColor-header-footer: #033495; */
+  --backgroundColor-header-footer: #aee4ff;
+  /* --mainNavLogo: #ffB8D0; */
+  --mainNavLogo: #2159c6;
 
   --animation-time: 300ms;
   --animation-cubic: linear;
@@ -31,10 +39,15 @@ body {
   /* background-color: rgba(255, 255, 255, 1); */
   /* background-image: url(./images/bcg1WebP.webp); */
   /* background-image: url(./images/bcg3WebP.webp); */
-  background-image: url(./images/bcg3smallWebP.webp);
+  /* background-image: url(./images/bcg3smallWebP.webp); */
+  background-image: url(./images/bcg2WebP.webp);
   background-repeat: no-repeat;
-  background-position: center 100px;
-  /* background-size: cover; */
+  @media (min-width: 744px){
+    background-repeat: repeat;
+  }
+  background-position: center;
+  /* background-position: center 50px; */
+  background-size: contain;
   background-attachment: fixed;
   
   /* background-color: lightyellow; */

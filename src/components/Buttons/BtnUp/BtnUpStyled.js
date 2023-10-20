@@ -12,16 +12,16 @@ export const BtnUpS = styled.button`
   padding: 0;
   border: none;
   border-radius: 50%;
-  color: var(--violet);
+  color: var(--mainNavLogo);
   background-color: rgba(255, 255, 227, 0.6);
   transition: color 250ms ease-in, background-color 250ms ease-in,
     outline 250ms ease-in;
   cursor: pointer;
 
   &:hover {
-    color: var(--red);
-    background-color: var(--green);
-    outline: 1px solid var(--blue-normal);
+    color: var(--hover);
+    background-color: var(--backgroundColor-header-footer);
+    outline: 1px solid var(--mainNavLogo);
   }
 
  

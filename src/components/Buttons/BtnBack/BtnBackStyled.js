@@ -22,7 +22,7 @@ height: 24px;
 export const TiArrowBackOutlineS = styled(TiArrowBackOutline)`
 width: 100%;
 height: 100%;
-fill: var(--violet);
+fill: var(--mainNavLogo);
 transition: fill 300ms linear;
 &:hover{
     fill: var(--hover);
@@ -32,7 +32,7 @@ color: blue; */
 `
 export const BackText = styled.p`
 display: block;
-color: var(--p_color);
+color: var(--mainNavLogo);
 font-size: 16px;
 transition: color 300ms linear;
 &:hover{

@@ -7,7 +7,7 @@ import { TbMail } from "react-icons/tb";
 export const HeaderWrapperS = styled.header`
   outline: 1px solid red;
   width: 100%;
-  background-color: var(--white);
+  background-color: var(--backgroundColor-header-footer);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,7 +45,7 @@ export const LinkHS = styled(Link)`
   font-size: 14px;
   font-weight: 700;
   transition: color 350ms linear;
-  color: var(--violet);
+  color: var(--mainNavLogo);
 
   &:hover {
     color: var(--hover);
@@ -77,7 +77,7 @@ const IconStyles = `
 
 export const AiOutlineInstagramS = styled(AiOutlineInstagram)`
   ${IconStyles}  
-  fill: var(--violet);  
+  fill: var(--mainNavLogo);  
   transition: fill 350ms linear;
   &:hover {
     fill: var(--hover);
@@ -85,7 +85,7 @@ export const AiOutlineInstagramS = styled(AiOutlineInstagram)`
 `;
 export const FaTelegramPlaneS = styled(FaTelegramPlane)`
   ${IconStyles}
-  fill: var(--violet);
+  fill: var(--mainNavLogo);
   transition: fill 350ms linear;
   &:hover {
     fill: var(--hover);
@@ -93,7 +93,7 @@ export const FaTelegramPlaneS = styled(FaTelegramPlane)`
 `;
 export const TbMailS = styled(TbMail)`
   ${IconStyles}
-  stroke: var(--violet);
+  stroke: var(--mainNavLogo);
   transition: stroke 350ms linear;
   &:hover {
     stroke: var(--hover);

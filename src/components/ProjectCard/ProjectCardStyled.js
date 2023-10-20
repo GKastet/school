@@ -2,9 +2,10 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const CardWrapper = styled.li`
-  outline: 1px solid red;  
+  /* outline: 1px solid red; */
   /* background-color: rgba(255, 255, 255, 1); */
-  background-color: rgba(255, 255, 255, 0.8);
+  /* background-color: rgba(174, 228, 255, 0.7); */
+  background-color: rgba(33, 89, 198, 0.7);
   /* background-color: rgba(0, 0, 0, 0.3); */
   padding: 10px;
   display: flex;
@@ -13,6 +14,12 @@ export const CardWrapper = styled.li`
   align-items: center;
   gap: 10px;
   border-radius: 20px;
+  /* border: 12px solid red; */
+  border-top: 10px solid var(--hover);
+  /* border-top: 10px solid #ffff53; */
+  border-right: 12px solid var(--hover);
+  /* border-right: 12px solid #ffff53; */
+  /* border-bottom: 12px solid red; */
   
   @media (min-width: 744px) {
     flex-wrap: nowrap;
@@ -44,13 +51,16 @@ export const ImgThumb = styled.div`
 
 export const TextThumb = styled.div`
   width: 100%;
-  z-index: 3;
+  /* z-index: 3; */
 `;
 
 export const ProjectText = styled.p`
   display: block;
   font-size: 16px;
   font-weight: 700;
+  letter-spacing: 0.12em;
+  /* color: var(--black); */
+  color: #fff;
   @media (min-width: 744px) {
     font-size: 20px;
   }
