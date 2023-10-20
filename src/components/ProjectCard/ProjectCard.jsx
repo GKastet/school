@@ -1,6 +1,8 @@
 import PropTypes from "prop-types";
 import {
+  CardOverlay,
   CardWrapper,
+  ImgOverlay,
   ImgThumb,
   ProjectText,
   TextThumb,
@@ -12,10 +14,14 @@ const ProjectCard = ({ project }) => {
   const { projectName } = project;
 
   return (
+    <>
     <CardWrapper>
+      <ImgOverlay>
       <ImgThumb>
         <AllProjectsImgs data={project} />
       </ImgThumb>
+      <CardOverlay className="card-overlay" to="/gallery">navštíviť galériu</CardOverlay>
+      </ImgOverlay>
       <TextThumb>
         <h3 style={{ textAlign: "center", color: "blue" }}>{projectName}</h3>
         <ProjectText>
@@ -25,7 +31,9 @@ const ProjectCard = ({ project }) => {
           ipsam labore?
         </ProjectText>
       </TextThumb>
+      
     </CardWrapper>
+    </>
   );
 };
 

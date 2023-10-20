@@ -14,8 +14,14 @@ const Modal = ({ onCloseModal, modal }) => {
   
   useEffect(() => {
     if (!isOpen) return;
+    
+    if (window.innerWidth < 744){
+      return
+    }else{
+      document.body.classList.add("no-scroll")
+    }
 
-    document.body.classList.add("no-scroll");
+    
 
     const handleKeyDown = (event) => {
       if (event.code === "Escape") {

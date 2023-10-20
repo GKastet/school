@@ -7,7 +7,7 @@ const GalleryItem = ({ data, onOpenModal }) => {
   return (
     <GalleryItemLi>
       <ImgThumb>
-        <GalleryImgsFunc data={data} onOpenModal={onOpenModal}/>
+        <GalleryImgsFunc data={data} onOpenModal={onOpenModal}/>        
       </ImgThumb>
     </GalleryItemLi>
   );

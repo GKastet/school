@@ -15,7 +15,8 @@
   --backgroundColor: #f7f6f6;
   --p_color: #000;
 
-  
+  --animation-time: 300ms;
+  --animation-cubic: linear;
 }
 
 * {
