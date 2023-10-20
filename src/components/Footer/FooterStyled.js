@@ -65,7 +65,7 @@ export const TbMailS = styled(TbMail)`
 
 export const SpanS = styled.span`
   font-size: 12px;
-  color: var(--white);
+  color: var(--mainNavLogo);
   @media (min-width: 744px) {
     font-size: 14px;
   }
