@@ -1,4 +1,4 @@
-import{u as a,j as e,G as x,r as c,L as C}from"./index-b8b82545.js";import{P as n,I as d,a as p,T as S,b as P,B as R}from"./BtnUp-a29ebe1c.js";const z=a.li`
+import{u as a,j as e,G as x,r as c,L as C}from"./index-89379e9e.js";import{P as n,I as d,a as p,T as S,b as P,B as R}from"./BtnUp-d3c0defc.js";const z=a.li`
   border-radius: 20px;
   /* box-shadow: none; */
   transition: all 1000 ms linear;  
@@ -57,7 +57,7 @@ import{u as a,j as e,G as x,r as c,L as C}from"./index-b8b82545.js";import{P as 
     overflow: hidden;
     border-radius: 20px;
   }
-`;function q(t){return x({tag:"svg",attr:{viewBox:"0 0 512 512"},child:[{tag:"path",attr:{d:"M405 136.798L375.202 107 256 226.202 136.798 107 107 136.798 226.202 256 107 375.202 136.798 405 256 285.798 375.202 405 405 375.202 285.798 256z"}}]})(t)}const F=a.button`
+`;function q(t){return x({tag:"svg",attr:{viewBox:"0 0 512 512"},child:[{tag:"path",attr:{d:"M405 136.798L375.202 107 256 226.202 136.798 107 107 136.798 226.202 256 107 375.202 136.798 405 256 285.798 375.202 405 405 375.202 285.798 256z"}}]})(t)}const N=a.button`
   position: absolute;
   cursor: pointer;
   top: 10px;
@@ -79,7 +79,7 @@ import{u as a,j as e,G as x,r as c,L as C}from"./index-b8b82545.js";import{P as 
     width: 40px;
     height: 40px;
   }
-`,G=a(q)`
+`,F=a(q)`
   fill: var(--violet);
   width: 20px;
   height: 20px;
@@ -87,7 +87,7 @@ import{u as a,j as e,G as x,r as c,L as C}from"./index-b8b82545.js";import{P as 
     width: 24px;
     height: 24px;
   }
-`,v=({onCloseModal:t})=>{const i=()=>{document.body.classList.remove("no-scroll"),t()};return e.jsx(e.Fragment,{children:e.jsx(F,{type:"button",onClick:i,children:e.jsx(G,{})})})};v.propTypes={onCloseModal:n.func.isRequired};function A(t){return x({tag:"svg",attr:{viewBox:"0 0 20 20",fill:"currentColor","aria-hidden":"true"},child:[{tag:"path",attr:{fillRule:"evenodd",d:"M15.707 15.707a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 010 1.414zm-6 0a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 011.414 1.414L5.414 10l4.293 4.293a1 1 0 010 1.414z",clipRule:"evenodd"}}]})(t)}function E(t){return x({tag:"svg",attr:{viewBox:"0 0 20 20",fill:"currentColor","aria-hidden":"true"},child:[{tag:"path",attr:{fillRule:"evenodd",d:"M10.293 15.707a1 1 0 010-1.414L14.586 10l-4.293-4.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z",clipRule:"evenodd"}},{tag:"path",attr:{fillRule:"evenodd",d:"M4.293 15.707a1 1 0 010-1.414L8.586 10 4.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z",clipRule:"evenodd"}}]})(t)}const N=a.button`
+`,v=({onCloseModal:t})=>{const i=()=>{document.body.classList.remove("no-scroll"),t()};return e.jsx(e.Fragment,{children:e.jsx(N,{type:"button",onClick:i,children:e.jsx(F,{})})})};v.propTypes={onCloseModal:n.func.isRequired};function G(t){return x({tag:"svg",attr:{viewBox:"0 0 20 20",fill:"currentColor","aria-hidden":"true"},child:[{tag:"path",attr:{fillRule:"evenodd",d:"M15.707 15.707a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 010 1.414zm-6 0a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 011.414 1.414L5.414 10l4.293 4.293a1 1 0 010 1.414z",clipRule:"evenodd"}}]})(t)}function A(t){return x({tag:"svg",attr:{viewBox:"0 0 20 20",fill:"currentColor","aria-hidden":"true"},child:[{tag:"path",attr:{fillRule:"evenodd",d:"M10.293 15.707a1 1 0 010-1.414L14.586 10l-4.293-4.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z",clipRule:"evenodd"}},{tag:"path",attr:{fillRule:"evenodd",d:"M4.293 15.707a1 1 0 010-1.414L8.586 10 4.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z",clipRule:"evenodd"}}]})(t)}const E=a.button`
   position: absolute;
   cursor: pointer;
   width: 30px;
@@ -109,7 +109,7 @@ import{u as a,j as e,G as x,r as c,L as C}from"./index-b8b82545.js";import{P as 
     width: 40px;
     height: 40px;
   }
-`,$=a(A)`
+`,$=a(G)`
   fill: var(--violet);
   width: 20px;
   height: 20px;
@@ -121,7 +121,7 @@ import{u as a,j as e,G as x,r as c,L as C}from"./index-b8b82545.js";import{P as 
     width: 24px;
     height: 24px;
   }
-`,w=({imageId:t,setImageId:i})=>{const r=()=>{if(t===1){alert("It is first image");return}i(t-1)};return e.jsx(e.Fragment,{children:e.jsx(N,{type:"button",onClick:r,children:e.jsx($,{})})})};w.propTypes={imageId:n.number.isRequired,setImageId:n.func.isRequired};const D=a.button`
+`,w=({imageId:t,setImageId:i})=>{const r=()=>{if(t===1){alert("It is first image");return}i(t-1)};return e.jsx(e.Fragment,{children:e.jsx(E,{type:"button",onClick:r,children:e.jsx($,{})})})};w.propTypes={imageId:n.number.isRequired,setImageId:n.func.isRequired};const D=a.button`
   position: absolute;
   cursor: pointer;
   width: 30px;
@@ -143,7 +143,7 @@ import{u as a,j as e,G as x,r as c,L as C}from"./index-b8b82545.js";import{P as 
     width: 40px;
     height: 40px;
   }
-`,M=a(E)`
+`,M=a(A)`
   fill: var(--violet);
   width: 20px;
   height: 20px;
@@ -171,7 +171,7 @@ height: 24px;
 `,H=a(O)`
 width: 100%;
 height: 100%;
-fill: var(--violet);
+fill: var(--mainNavLogo);
 transition: fill 300ms linear;
 &:hover{
     fill: var(--hover);
@@ -180,7 +180,7 @@ transition: fill 300ms linear;
 color: blue; */
 `,K=a.p`
 display: block;
-color: var(--p_color);
+color: var(--mainNavLogo);
 font-size: 16px;
 transition: color 300ms linear;
 &:hover{
@@ -189,4 +189,4 @@ transition: color 300ms linear;
 @media (min-width: 744px){
     font-size: 18px;
 }
-`,_=()=>e.jsx(e.Fragment,{children:e.jsxs(Y,{to:"/",children:[e.jsx(U,{children:e.jsx(H,{})}),e.jsx(K,{children:"Späť"})]})}),J=()=>{const[t,i]=c.useState(!1);return c.useEffect(()=>{const r=()=>{window.scrollY>100?i(!0):i(!1)};return window.addEventListener("scroll",r),()=>{window.removeEventListener("scroll",r)}},[]),e.jsxs(P,{children:[e.jsx(_,{}),e.jsx(W,{}),t&&e.jsx(R,{})]})},X=J;export{X as default};
+`,J=()=>e.jsx(e.Fragment,{children:e.jsxs(Y,{to:"/",children:[e.jsx(U,{children:e.jsx(H,{})}),e.jsx(K,{children:"Späť"})]})}),Q=()=>{const[t,i]=c.useState(!1);return c.useEffect(()=>{const r=()=>{window.scrollY>100?i(!0):i(!1)};return window.addEventListener("scroll",r),()=>{window.removeEventListener("scroll",r)}},[]),e.jsxs(P,{children:[e.jsx(J,{}),e.jsx(W,{}),t&&e.jsx(R,{})]})},Z=Q;export{Z as default};
