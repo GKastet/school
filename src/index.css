@@ -12,16 +12,20 @@
   --red: #ff0000;
 
   /* --hover:#ffba00; */
-  --hover:#ff5991;
+  --hover:#ff7b89;
 
   --green: #91ff1c;
   --backgroundColor: #b27bc1;
   --p_color: #000;
   /* #b27bc1 */
   /* --backgroundColor-header-footer: #033495; */
-  --backgroundColor-header-footer: #aee4ff;
+  --backgroundColor-header-footer: #033495;
   /* --mainNavLogo: #ffB8D0; */
-  --mainNavLogo: #2159c6;
+  --mainNavLogo: #aee4ff;
+  --text-color: #fff;
+  --spinerBallColor1: #ff44f4;
+  --spinerBallColor2: #fff887;
+  --spinerBallColor3: #FF9E00;
 
   --animation-time: 300ms;
   --animation-cubic: linear;
@@ -34,7 +38,7 @@
 }
 
 body {
-  padding: 10px;
+  /* padding: 10px; */
   background-color: var(--backgroundColor);
   /* background-color: rgba(255, 255, 255, 1); */
   /* background-image: url(./images/bcg1WebP.webp); */

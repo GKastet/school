@@ -4,7 +4,7 @@ export const BtnUpS = styled.button`
   outline: 1px solid var(--blue-hover);
   position: fixed;  
   right: 10px;  
-  bottom: 10px;    
+  bottom: 16px;    
   display: inline-block;
   width: 64px;
   height: 64px;
@@ -13,7 +13,7 @@ export const BtnUpS = styled.button`
   border: none;
   border-radius: 50%;
   color: var(--mainNavLogo);
-  background-color: rgba(255, 255, 227, 0.6);
+  background-color: rgba(255, 255, 227, 0.5);
   transition: color 250ms ease-in, background-color 250ms ease-in,
     outline 250ms ease-in;
   cursor: pointer;

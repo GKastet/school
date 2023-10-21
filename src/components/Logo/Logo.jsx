@@ -8,7 +8,8 @@ const Logo = () => {
         ariaLabel="dna-loading"
         wrapperStyle={{}}        
         wrapperClass="dna-wrapper"
-        ballColors={["#ff0000", "#00ff00", "#0000ff"]}
+        // ballColors={["#ff0000", "#00ff00", "#0000ff"]}
+        ballColors={['var(--spinerBallColor1)', 'var(--spinerBallColor2)', 'var(--spinerBallColor3)']}
         // backgroundColor="#6302d1"
         backgroundColor="var(--mainNavLogo)"
         height="40"

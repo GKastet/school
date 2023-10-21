@@ -5,7 +5,7 @@ import { FaTelegramPlane } from "react-icons/fa";
 import { TbMail } from "react-icons/tb";
 
 export const HeaderWrapperS = styled.header`
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   width: 100%;
   background-color: var(--backgroundColor-header-footer);
   display: flex;
@@ -19,7 +19,7 @@ export const HeaderWrapperS = styled.header`
 `;
 
 export const NavigationWrapper = styled.div`
-  outline: 1px solid green;
+  /* outline: 1px solid green; */
   display: flex;
   align-items: center;
   justify-content: space-between;

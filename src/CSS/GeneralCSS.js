@@ -2,7 +2,8 @@ import styled from "styled-components";
 import BCGImage from "../images/bcg1WebP.webp"
 
 export const PageWrapper = styled.section`
-  outline: 1px solid blue;
+  /* outline: 1px solid blue; */
+  padding: 20px 10px;
   position: relative;
   padding-top: 100px;
   width: 100%;
@@ -23,6 +24,10 @@ display: block;
 text-align: center;
 margin-bottom: 30px;
 font-size: 30px;
+font-size: 44px;
+letter-spacing: 0.1em;
+text-decoration: underline;
+color: var(--white);
 `
 
 

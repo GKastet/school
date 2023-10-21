@@ -9,8 +9,9 @@ const Loader = () => {
         ariaLabel="dna-loading"
         wrapperStyle={{}}
         // wrapperClass="dna-wrapper"
-        ballColors={["#ff0000", "#00ff00", "#0000ff"]}
-        backgroundColor="var(--violet)"
+        ballColors={['var(--spinerBallColor1)', 'var(--spinerBallColor2)', 'var(--spinerBallColor3)']}
+        // backgroundColor="var(--violet)"
+        backgroundColor="var(--mainNavLogo)"
         height="120"
         width="120"
       />

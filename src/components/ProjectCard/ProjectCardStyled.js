@@ -59,8 +59,9 @@ export const ProjectText = styled.p`
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.12em;
+  font-style: italic;
   /* color: var(--black); */
-  color: #fff;
+  color: var(--text-color);
   @media (min-width: 744px) {
     font-size: 20px;
   }
