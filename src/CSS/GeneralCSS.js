@@ -9,6 +9,7 @@ export const PageWrapper = styled.section`
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: 0 auto;
   /* background-image: url(${BCGImage}); */
   @media (min-width: 744px) and (max-width: 1279px) {    

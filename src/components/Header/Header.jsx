@@ -24,6 +24,7 @@ const Header = () => {
         <LinkWrapper>
           <LinkHS to="/">Domov</LinkHS>
           <LinkHS to="/gallery">Galéria</LinkHS>
+          <LinkHS to="/presentation">Prezentácia</LinkHS>
         </LinkWrapper>
         <AllIconBox>
           <SingleIconBox>

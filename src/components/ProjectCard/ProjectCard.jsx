@@ -8,10 +8,13 @@ import {
   TextThumb,
 } from "./ProjectCardStyled";
 import AllProjectsImgs from "../AllProjects/AllProjectsImgs";
+// import allprojectsInfo from "../AllProjects/allProjectsInfo"
 
 
-const ProjectCard = ({ project }) => {
-  const { projectName } = project;
+const ProjectCard = ({ project }) => {  
+  // console.log(project.projectDescription);
+  const { projectName, projectDescription } = project
+  const descriptionWithLineBreaks = projectDescription.replace(/\n/g, "<br>");
 
   return (
     <>
@@ -24,10 +27,10 @@ const ProjectCard = ({ project }) => {
       </ImgOverlay>
       <TextThumb>
         <h3 style={{ fontSize: '28px', textAlign: "center", color: 'white' }}>{projectName}</h3>
-        <ProjectText>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel atque
-          excepturi maiores nemo eum consequuntur sunt.
-        </ProjectText>
+        <ProjectText dangerouslySetInnerHTML={{ __html: descriptionWithLineBreaks }} />
+        
+          {/* {descriptionWithLineBreaks}           */}
+        {/* </ProjectText> */}
       </TextThumb>
       
     </CardWrapper>
@@ -38,6 +41,7 @@ const ProjectCard = ({ project }) => {
 ProjectCard.propTypes = {
   project: PropTypes.shape({
     projectName: PropTypes.string.isRequired,
+    projectDescription: PropTypes.string.isRequired,
   }).isRequired,
 };
 
