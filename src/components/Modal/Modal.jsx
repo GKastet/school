@@ -11,7 +11,7 @@ const Modal = ({ onCloseModal, modal, imgListLength }) => {
   // const [imageId, setImageId] = useState(Number(modalData.id));
   // console.log("modalData.idx", modalData.idx)
   const [imageIdx, setImageIdx] = useState(Number(modalData.idx));
-
+console.log('111', imageIdx);
   const activePrevBtn = imageIdx === 1;
   const activeNextBtn = imgListLength === imageIdx;
   // console.log(activeNextBtn);
@@ -51,7 +51,8 @@ const Modal = ({ onCloseModal, modal, imgListLength }) => {
   return (
     <ModalStyled onClick={handleClickOverlay}>
       <div style={{ position: "relative" }}>
-        <GalleryImgsFunc data={newModalData} isOpen={modal.isOpen} />
+        {/* <GalleryImgsFunc data={newModalData} isOpen={modal.isOpen} /> */}
+        <GalleryImgsFunc index={imageIdx} isOpen={modal.isOpen} data={newModalData}/>
         <BtnClose onCloseModal={onCloseModal} />
         {!activePrevBtn && (
           <BtnPrev imageIdx={imageIdx} setImageIdx={setImageIdx} />

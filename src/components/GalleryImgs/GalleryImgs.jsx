@@ -14,10 +14,12 @@ const imgListLength = ImgList.length
 
 
   const onOpenModal = data => {
-    console.log("onOpenModal", data);    
+    console.log("onOpenModaldata", data);    
+    console.log("onOpenModal", modal);
     setModal({ isOpen: true, modalData: data });
+    
   };
-
+  console.log("onOpenModal", modal);
   const onCloseModal = () => setModal({ isOpen: false, modalData: null });
 
   // const checkImgIdx = (idx) =>{    
@@ -40,8 +42,8 @@ const imgListLength = ImgList.length
     <>
       <TitleS>Galéria</TitleS>
       <ul style={{display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "20px", paddingBottom: "20px"}}>
-        {ImgList?.map((image) => (
-          <GalleryItem key={image.id} data={image} onOpenModal={onOpenModal}/>
+        {ImgList?.map((image, index) => (
+          <GalleryItem key={image.id} data={image} index={index} onOpenModal={onOpenModal}/>
         ))}
       </ul>
       {modal.isOpen && <Modal onCloseModal={onCloseModal} modal={modal} imgListLength={imgListLength}/>}

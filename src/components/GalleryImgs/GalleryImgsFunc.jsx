@@ -32,14 +32,17 @@ import FotoProject13 from "../../images/13_MechanikaAutomobilu_title_horiz_webP.
 import FotoProject14 from "../../images/14_FicherTechnik_title_horiz_webP.webp"; //28
 import FotoProject141 from "../../images/14_141_webP.webp"; //29
 
-const GalleryImgsFunc = ({ data, isOpen = false, onOpenModal }) => {
-  // console.log('dataFunc: ', data);
+const GalleryImgsFunc = ({ index, data, isOpen = false, onOpenModal }) => {
+  // console.log('dataFunc: ', index);
   // console.log("galleryFunc", isOpen);
-  const { idx, imgAlt } = data;
+  const { imgAlt } = data;
   // console.log("idx", idx);
 
-  // switch (id || idx) {
-  switch (idx) {
+  const indexCase = index.toString()
+
+
+  switch (indexCase) {
+  // switch (idx) {
     case "1":
       return (
         <>
@@ -50,7 +53,8 @@ const GalleryImgsFunc = ({ data, isOpen = false, onOpenModal }) => {
             loading="lazy"
             className={isOpen ? "" : "normal"}
             onClick={() => {
-              onOpenModal({ idx });
+              onOpenModal({ idx: indexCase });
+              // onOpenModal({ index });
             }}
           />
         </>
@@ -65,7 +69,8 @@ const GalleryImgsFunc = ({ data, isOpen = false, onOpenModal }) => {
             loading="lazy"
             className={isOpen ? "" : "normal"}
             onClick={() => {
-              onOpenModal({ idx });
+              onOpenModal({ idx: indexCase });
+              // onOpenModal({ index });
             }}
           />
         </>
@@ -80,7 +85,8 @@ const GalleryImgsFunc = ({ data, isOpen = false, onOpenModal }) => {
             loading="lazy"
             className={isOpen ? "" : "normal"}
             onClick={() => {
-              onOpenModal({ idx });
+              onOpenModal({ idx: indexCase });
+              // onOpenModal({ index });
             }}
           />
         </>
@@ -95,7 +101,7 @@ const GalleryImgsFunc = ({ data, isOpen = false, onOpenModal }) => {
             loading="lazy"
             className={isOpen ? "" : "normal"}
             onClick={() => {
-              onOpenModal({ idx });
+              onOpenModal({ idx: indexCase });
             }}
           />
         </>
@@ -110,7 +116,7 @@ const GalleryImgsFunc = ({ data, isOpen = false, onOpenModal }) => {
             loading="lazy"
             className={isOpen ? "" : "normal"}
             onClick={() => {
-              onOpenModal({ idx });
+              onOpenModal({ idx: indexCase });
             }}
           />
         </>
@@ -125,7 +131,7 @@ const GalleryImgsFunc = ({ data, isOpen = false, onOpenModal }) => {
             loading="lazy"
             className={isOpen ? "" : "normal"}
             onClick={() => {
-              onOpenModal({ idx });
+              onOpenModal({ idx: indexCase });
             }}
           />
         </>
@@ -140,7 +146,7 @@ const GalleryImgsFunc = ({ data, isOpen = false, onOpenModal }) => {
             loading="lazy"
             className={isOpen ? "" : "normal"}
             onClick={() => {
-              onOpenModal({ idx });
+              onOpenModal({ idx: indexCase });
             }}
           />
         </>
@@ -155,7 +161,7 @@ const GalleryImgsFunc = ({ data, isOpen = false, onOpenModal }) => {
             loading="lazy"
             className={isOpen ? "" : "normal"}
             onClick={() => {
-              onOpenModal({ idx });
+              onOpenModal({ idx: indexCase });
             }}
           />
         </>
@@ -170,7 +176,7 @@ const GalleryImgsFunc = ({ data, isOpen = false, onOpenModal }) => {
             loading="lazy"
             className={isOpen ? "" : "normal"}
             onClick={() => {
-              onOpenModal({ idx });
+              onOpenModal({ idx: indexCase });
             }}
           />
         </>
@@ -185,7 +191,7 @@ const GalleryImgsFunc = ({ data, isOpen = false, onOpenModal }) => {
             loading="lazy"
             className={isOpen ? "" : "normal"}
             onClick={() => {
-              onOpenModal({ idx });
+              onOpenModal({ idx: indexCase });
             }}
           />
         </>
@@ -197,10 +203,11 @@ const GalleryImgsFunc = ({ data, isOpen = false, onOpenModal }) => {
             src={`${FotoProject51}`}
             alt={imgAlt}
             type="image/webp"
-            loading="lazy"
+            loading="lazy"            
             className={isOpen ? "" : "normal"}
             onClick={() => {
-              onOpenModal({ idx });
+              onOpenModal({ idx: indexCase });
+              // onOpenModal({ index });
             }}
           />
         </>
@@ -215,7 +222,7 @@ const GalleryImgsFunc = ({ data, isOpen = false, onOpenModal }) => {
             loading="lazy"
             className={isOpen ? "" : "normal"}
             onClick={() => {
-              onOpenModal({ idx });
+              onOpenModal({ idx: indexCase });
             }}
           />
         </>
@@ -234,7 +241,7 @@ const GalleryImgsFunc = ({ data, isOpen = false, onOpenModal }) => {
             loading="lazy"
             className={isOpen ? "" : "normal"}
             onClick={() => {
-              onOpenModal({ idx });
+              onOpenModal({ idx: indexCase });
             }}
           />
         </>
@@ -249,7 +256,7 @@ const GalleryImgsFunc = ({ data, isOpen = false, onOpenModal }) => {
             loading="lazy"
             className={isOpen ? "" : "normal"}
             onClick={() => {
-              onOpenModal({ idx });
+              onOpenModal({ idx: indexCase });
             }}
           />
         </>
@@ -269,7 +276,7 @@ const GalleryImgsFunc = ({ data, isOpen = false, onOpenModal }) => {
             loading="lazy"
             className={isOpen ? "" : "normal"}
             onClick={() => {
-              onOpenModal({ idx });
+              onOpenModal({ idx: indexCase });
             }}
           />
         </>
@@ -284,7 +291,7 @@ const GalleryImgsFunc = ({ data, isOpen = false, onOpenModal }) => {
             loading="lazy"
             className={isOpen ? "" : "normal"}
             onClick={() => {
-              onOpenModal({ idx });
+              onOpenModal({ idx: indexCase });
             }}
           />
         </>
@@ -296,10 +303,11 @@ const GalleryImgsFunc = ({ data, isOpen = false, onOpenModal }) => {
 };
 
 GalleryImgsFunc.propTypes = {
+  index: PropTypes.number,
   data: PropTypes.shape({
-    idx: PropTypes.string.isRequired,
+    // idx: PropTypes.string,
     imgAlt: PropTypes.string,
-  }).isRequired,
+  }),
   isOpen: PropTypes.bool,
   onOpenModal: PropTypes.func,
 };
