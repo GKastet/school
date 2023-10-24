@@ -1,5 +1,17 @@
 import { Link } from "react-router-dom";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const fadeIn = keyframes`
+  0% {
+    opacity: 0;
+  }
+  /* 50% {
+    opacity: 0.3;
+  } */
+  100% {
+    opacity: 1;
+  }
+`;
 
 export const CardWrapper = styled.li`
   /* outline: 1px solid red; */
@@ -54,17 +66,56 @@ export const TextThumb = styled.div`
   /* z-index: 3; */
 `;
 
+// export const ProjectText = styled.p`
+//   display: block;
+//   font-size: 16px;
+//   font-weight: 700;
+//   letter-spacing: 0.12em;
+//   font-style: italic;
+//   /* color: var(--black); */
+//   color: var(--text-color);
+//   @media (min-width: 744px) {
+//     font-size: 20px;
+//   }
+//   /* opacity: 0; */
+//   opacity: 0; /* Устанавливаем начальное значение нулевой прозрачности */
+//   transition: opacity 2s ease-in-out; /* Анимация появления текста в течение 2 секунд */
+//   animation: ${fadeIn} 1s ease-in-out 2s;
+//   @keyframes fadeIn {
+//     to {
+//       opacity: 1; /* По завершении анимации, текст станет видимым */
+//     }
+//   }
+
+
+// `;
+
 export const ProjectText = styled.p`
   display: block;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.12em;
   font-style: italic;
-  /* color: var(--black); */
   color: var(--text-color);
+  
+  /* Задаем начальную прозрачность нулевой */
+  opacity: 0;
+  animation: ${fadeIn} 0.3s ease-in-out 2s forwards;
   @media (min-width: 744px) {
     font-size: 20px;
   }
+
+  /* Применяем анимацию для плавного появления текста */
+  //transition: opacity 2s ease-in-out;
+
+  /* После задержки в 2 секунды, устанавливаем прозрачность в 1 */
+  //animation: ${fadeIn} 1s ease-in-out 2s;
+
+  /* @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  } */
 `;
 
 export const CardOverlay = styled(Link)`
