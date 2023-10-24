@@ -1,10 +1,9 @@
-//import { useLocation } from "react-router-dom";
 import { PageWrapper } from "../../CSS/GeneralCSS";
 import AllProjects from "../../components/AllProjects/AllProjects";
 import BtnUp from "../../components/Buttons/BtnUp/BtnUp";
 import { useEffect, useState } from "react";
 
-const HomePage = () => {
+const HomePage = () => {  
   const [showBtnUp, setShowBtnUp] = useState(false);
 
   useEffect(() => {

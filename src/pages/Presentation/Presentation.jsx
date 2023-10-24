@@ -1,10 +1,17 @@
+import { useLocation } from "react-router-dom";
 import { PageWrapper, TitleS } from "../../CSS/GeneralCSS";
 import Video from "../../images/presentation_Merkur.mp4";
 import { VideoThumb, VideoWrapper } from "./PresentationStyled";
+import { useRef } from "react";
+import BtnBack from "../../components/Buttons/BtnBack/BtnBack";
 
 const Presentation = () => {
+  const location = useLocation()  
+  const backLinkRef = useRef(location.state?.from)
+
   return (
     <PageWrapper>
+      <BtnBack location={backLinkRef}/>
       <TitleS>Presentation</TitleS>
       <VideoWrapper>
       <VideoThumb>

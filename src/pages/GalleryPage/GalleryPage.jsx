@@ -3,10 +3,12 @@ import { PageWrapper } from "../../CSS/GeneralCSS";
 import BtnUp from "../../components/Buttons/BtnUp/BtnUp";
 import GalleryImgs from "../../components/GalleryImgs/GalleryImgs";
 import BtnBack from "../../components/Buttons/BtnBack/BtnBack";
+import { useLocation } from "react-router-dom";
+import { useRef } from "react";
 
-const GalleryPage = ({prevLocation}) => {
-  console.log('prevLocation', prevLocation);
-  
+const GalleryPage = () => {
+  const location = useLocation()  
+  const backLinkRef = useRef(location.state?.from)
   const [showBtnUp, setShowBtnUp] = useState(false);
 
   useEffect(() => {
@@ -26,7 +28,7 @@ const GalleryPage = ({prevLocation}) => {
   }, []);
   return (
     <PageWrapper>
-      <BtnBack/>
+      <BtnBack location={backLinkRef}/>
       <GalleryImgs/>      
       {showBtnUp && <BtnUp/>}               
     </PageWrapper>

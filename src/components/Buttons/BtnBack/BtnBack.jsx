@@ -1,9 +1,10 @@
+import PropTypes from "prop-types";
 import { BackText, BtnBoxLink, IconBox, TiArrowBackOutlineS } from "./BtnBackStyled";
 
-const BtnBack = () => {
+const BtnBack = ({location}) => {  
   return (
-    <>
-      <BtnBoxLink to="/">
+    <>     
+      <BtnBoxLink to={location.current?? '/'}>
         <IconBox>
           <TiArrowBackOutlineS />
         </IconBox>
@@ -12,5 +13,7 @@ const BtnBack = () => {
     </>
   );
 };
-
+BtnBack.propTypes = {
+  location: PropTypes.object.isRequired,
+};
 export default BtnBack;

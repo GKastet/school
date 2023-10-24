@@ -16,8 +16,7 @@ import { useLocation } from "react-router-dom";
 
 
 const Header = () => {
-  const location = useLocation()
-  console.log(location);
+  const location = useLocation()  
   return (
     <HeaderWrapperS>
       <NavigationWrapper>
@@ -25,9 +24,9 @@ const Header = () => {
           <Logo />
         </div>
         <LinkWrapper>
-          <LinkHS to="/" activeclassname="active">Domov</LinkHS>
-          <LinkHS to="/gallery" activeclassname="active">Galéria</LinkHS>
-          <LinkHS to="/presentation" activeclassname="active">Prezentácia</LinkHS>
+          <LinkHS to="/" state={{from: location}} activeclassname="active">Domov</LinkHS>
+          <LinkHS to="/gallery" state={{from: location}} activeclassname="active">Galéria</LinkHS>
+          <LinkHS to="/presentation" state={{from: location}} activeclassname="active">Prezentácia</LinkHS>
         </LinkWrapper>
         <AllIconBox>
           <SingleIconBox>
