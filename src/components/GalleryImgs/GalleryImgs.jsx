@@ -14,12 +14,12 @@ const imgListLength = ImgList.length
 
 
   const onOpenModal = data => {
-    console.log("onOpenModaldata", data);    
-    console.log("onOpenModal", modal);
+    // console.log("onOpenModaldata", data);    
+    // console.log("onOpenModal", modal);
     setModal({ isOpen: true, modalData: data });
     
   };
-  console.log("onOpenModal", modal);
+  // console.log("onOpenModal", modal);
   const onCloseModal = () => setModal({ isOpen: false, modalData: null });
 
   // const checkImgIdx = (idx) =>{    
