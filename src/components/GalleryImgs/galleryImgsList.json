@@ -1,26 +1,48 @@
 [
     {
-        "id": "1",
-        "imgSrc": "/school/src/images/50WebP.webp",
-        "imgAlt": "Project foto",
-        "projectName": "Project name"
+        "idx": "1",
+        "id": "1",        
+        "imgAlt": "Project 1 foto"        
     },
     {
-        "id": "2",
-        "imgSrc": "/school/src/images/64WebP.webp",
-        "imgAlt": "Project foto",
-        "projectName": "Project name"
+        "idx": "2",
+        "id": "2",        
+        "imgAlt": "Project 2 foto"
+        
     },
     {
-        "id": "3",
-        "imgSrc": "/school/src/images/50WebP.webp",
-        "imgAlt": "Project foto",
-        "projectName": "Project name"
+        "idx": "3",
+        "id": "21",        
+        "imgAlt": "Project 2 foto"        
     },
     {
-        "id": "4",
-        "imgSrc": "/school/src/images/64WebP.webp",
-        "imgAlt": "Project foto",
-        "projectName": "Project name"
+        "idx": "4",
+        "id": "22",        
+        "imgAlt": "Project 2 foto"        
+    },
+    {
+        "idx": "5",
+        "id": "3",        
+        "imgAlt": "Project 3 foto"        
+    },
+    {
+        "idx": "6",
+        "id": "31",        
+        "imgAlt": "Project 3 foto"        
+    },
+    {
+        "idx": "7",
+        "id": "32",        
+        "imgAlt": "Project 3 foto"        
+    },
+    {
+        "idx": "8",
+        "id": "4",        
+        "imgAlt": "Project foto"        
+    },
+    {
+        "idx": "9",
+        "id": "41",        
+        "imgAlt": "Project 4 foto"        
     }    
 ]

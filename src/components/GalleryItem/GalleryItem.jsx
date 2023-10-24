@@ -3,7 +3,7 @@ import { GalleryItemLi, ImgThumb } from "./GalleryItemStyled";
 import GalleryImgsFunc from "../GalleryImgs/GalleryImgsFunc";
 
 const GalleryItem = ({ data, onOpenModal }) => {
-  // console.log(isOpen);
+  // console.log("idx", idx);
   return (
     <GalleryItemLi>
       <ImgThumb>
@@ -14,12 +14,10 @@ const GalleryItem = ({ data, onOpenModal }) => {
 };
 
 GalleryItem.propTypes = {
-  data: PropTypes.shape({
-    imgSrc: PropTypes.string.isRequired,
+  data: PropTypes.shape({    
     imgAlt: PropTypes.string.isRequired,
-  }).isRequired,
-  // isOpen: PropTypes.bool.isRequired,
-  onOpenModal: PropTypes.func.isRequired,
+  }).isRequired,  
+  onOpenModal: PropTypes.func.isRequired,  
 };
 
 export default GalleryItem;

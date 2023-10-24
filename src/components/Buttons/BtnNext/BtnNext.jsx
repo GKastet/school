@@ -1,14 +1,10 @@
 import PropTypes from "prop-types";
 import { BtnNextIconS, BtnNextS } from "./BtnNextStyled";
 
-const BtnNext = ({ imageId, setImageId }) => {
+const BtnNext = ({ imageIdx, setImageIdx }) => {
 
-    const handleNextImage = () => {
-        if (imageId === 4) {
-          alert("You achieved the last image");
-          return;
-        }
-        setImageId(imageId + 1);
+    const handleNextImage = () => {        
+        setImageIdx(imageIdx+1)
       };
 
   return (
@@ -21,8 +17,8 @@ const BtnNext = ({ imageId, setImageId }) => {
 };
 
 BtnNext.propTypes = {
-  imageId: PropTypes.number.isRequired,
-  setImageId: PropTypes.func.isRequired,
+  imageIdx: PropTypes.number.isRequired,
+  setImageIdx: PropTypes.func.isRequired,
 };
 
 export default BtnNext;

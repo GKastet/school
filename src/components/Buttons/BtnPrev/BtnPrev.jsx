@@ -1,14 +1,10 @@
 import PropTypes from "prop-types";
 import { BtnPrevIconS, BtnPrevS } from "./BtnPrevStyled";
 
-const BtnPrev = ({ imageId, setImageId }) => {
+const BtnPrev = ({ imageIdx, setImageIdx }) => {
 
-  const handlePrevImage = () => {
-    if (imageId === 1){
-        alert("It is first image")
-        return
-    } 
-    setImageId(imageId - 1);
+  const handlePrevImage = () => {    
+    setImageIdx(imageIdx - 1);
   };
 
   return (
@@ -21,8 +17,8 @@ const BtnPrev = ({ imageId, setImageId }) => {
 };
 
 BtnPrev.propTypes = {
-  imageId: PropTypes.number.isRequired,
-  setImageId: PropTypes.func.isRequired,
+  imageIdx: PropTypes.number.isRequired,
+  setImageIdx: PropTypes.func.isRequired,
 };
 
 export default BtnPrev;

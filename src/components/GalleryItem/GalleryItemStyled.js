@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const GalleryItemLi = styled.li`
   border-radius: 20px;
   /* box-shadow: none; */
+  cursor: zoom-in;
   transition: all 1000 ms linear;  
   &:hover {
     box-shadow: 0px 0px 12px 9px rgba(196, 33, 196, 0.82);
@@ -10,10 +11,10 @@ export const GalleryItemLi = styled.li`
 `;
 
 export const ImgThumb = styled.div`
-  outline: 1px solid black;
+  outline: 1px solid var(--backgroundColor-header-footer);
   border-radius: 20px;
   width: 300px;
-  /* height: 200px; */
+  height: 180px;
   overflow: hidden;
   /* @media (min-width:1280px){
     min-width: 500px;

@@ -9,17 +9,33 @@ const GalleryImgs = () => {
     isOpen: false,
     modalData: null,    
   })
-  // const [imageId, setImageId] =useState(null)
-  
-// console.log(modal);
+  // const [imgIdx, setImgIdx] = useState(0)
+const imgListLength = ImgList.length
 
-  const onOpenModal = data => {    
+
+  const onOpenModal = data => {
+    console.log("onOpenModal", data);    
     setModal({ isOpen: true, modalData: data });
   };
 
   const onCloseModal = () => setModal({ isOpen: false, modalData: null });
 
-  
+  // const checkImgIdx = (idx) =>{    
+  //   setImgIdx(idx)
+  // }
+  // const prevModalImg = () => {    
+  //   setImgIdx(imgIdx-1)
+  // }
+
+  // const nextModalImg = () =>{
+  //   console.log("idx", imgIdx);
+  //   setImgIdx(imgIdx+1)
+  //   console.log("idx", imgIdx);
+  // }
+
+  // const lastImg = ImgList.length === imgIdx+1
+  // console.log(lastImg);
+
   return (
     <>
       <TitleS>Galéria</TitleS>
@@ -28,7 +44,7 @@ const GalleryImgs = () => {
           <GalleryItem key={image.id} data={image} onOpenModal={onOpenModal}/>
         ))}
       </ul>
-      {modal.isOpen && <Modal onCloseModal={onCloseModal} modal={modal}/>}
+      {modal.isOpen && <Modal onCloseModal={onCloseModal} modal={modal} imgListLength={imgListLength}/>}
     </>        
   );
 };

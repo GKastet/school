@@ -6,22 +6,24 @@ import BtnClose from "../Buttons/BtnClose/BtnClose";
 import BtnPrev from "../Buttons/BtnPrev/BtnPrev";
 import BtnNext from "../Buttons/BtnNext/BtnNext";
 
-
-const Modal = ({ onCloseModal, modal }) => {
-// console.log(modal);
+const Modal = ({ onCloseModal, modal, imgListLength }) => {
   const { isOpen, modalData } = modal;
-  const [imageId, setImageId] = useState(Number(modalData.id));
-  
+  // const [imageId, setImageId] = useState(Number(modalData.id));
+  // console.log("modalData.idx", modalData.idx)
+  const [imageIdx, setImageIdx] = useState(Number(modalData.idx));
+
+  const activePrevBtn = imageIdx === 1;
+  const activeNextBtn = imgListLength === imageIdx;
+  // console.log(activeNextBtn);
+
   useEffect(() => {
     if (!isOpen) return;
-    
-    if (window.innerWidth < 744){
-      return
-    }else{
-      document.body.classList.add("no-scroll")
-    }
 
-    
+    if (window.innerWidth < 744) {
+      return;
+    } else {
+      document.body.classList.add("no-scroll");
+    }
 
     const handleKeyDown = (event) => {
       if (event.code === "Escape") {
@@ -40,20 +42,24 @@ const Modal = ({ onCloseModal, modal }) => {
       document.body.classList.remove("no-scroll");
       onCloseModal();
     }
-  };  
+  };
 
   const newModalData = {
-    id: imageId.toString(),
+    idx: imageIdx.toString(),
   };
 
   return (
-    <ModalStyled onClick={handleClickOverlay}>      
+    <ModalStyled onClick={handleClickOverlay}>
       <div style={{ position: "relative" }}>
-        <GalleryImgsFunc data={newModalData} isOpen={modal.isOpen}/>
+        <GalleryImgsFunc data={newModalData} isOpen={modal.isOpen} />
         <BtnClose onCloseModal={onCloseModal} />
-        <BtnPrev imageId={imageId} setImageId={setImageId}/>
-        <BtnNext imageId={imageId} setImageId={setImageId}/>
-      </div>      
+        {!activePrevBtn && (
+          <BtnPrev imageIdx={imageIdx} setImageIdx={setImageIdx} />
+        )}
+        {!activeNextBtn && (
+          <BtnNext imageIdx={imageIdx} setImageIdx={setImageIdx} />
+        )}
+      </div>
     </ModalStyled>
   );
 };
@@ -61,6 +67,7 @@ const Modal = ({ onCloseModal, modal }) => {
 Modal.propTypes = {
   onCloseModal: PropTypes.func.isRequired,
   modal: PropTypes.object.isRequired,
+  imgListLength: PropTypes.number,
 };
 
 export default Modal;
