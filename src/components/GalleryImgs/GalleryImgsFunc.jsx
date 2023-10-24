@@ -4,7 +4,7 @@ import { ImgTagS } from "./GalleryImgsFuncStyled";
 import FotoProject1 from "../../images/1_Merkur_title_horiz_WebP.webp"; //1
 
 import FotoProject2 from "../../images/2_SolarHydraulic_title_horiz_WebP.webp"; //2
-import FotoProject21 from "../../images/2_21_WebP.webp"; //3
+import FotoProject21 from "../../images/2-21_WebP.webp"; //3
 import FotoProject22 from "../../images/2_22_WebP.webp"; //4
 
 import FotoProject3 from "../../images/3_FuelCellCar_title-horiz_WebP.webp"; //5
