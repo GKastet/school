@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { FaTelegramPlane } from "react-icons/fa";
 import { TbMail } from "react-icons/tb";
@@ -35,13 +35,13 @@ export const NavigationWrapper = styled.div`
 
 export const LinkWrapper = styled.div`
   display: flex;
-  gap: 20px;
+  gap: 10px;
   @media (min-width: 744px){    
     gap: 40px;
   }
 `;
 
-export const LinkHS = styled(Link)`
+export const LinkHS = styled(NavLink)`
   font-size: 14px;
   font-weight: 700;
   transition: color 350ms linear;
@@ -50,6 +50,9 @@ export const LinkHS = styled(Link)`
   &:hover {
     color: var(--hover);
   }
+  &.active {
+    color: var(--hover); // Здесь укажите цвет для активной ссылки
+  }
   @media (min-width: 744px){    
     font-size: 18px;   
   }
@@ -57,7 +60,10 @@ export const LinkHS = styled(Link)`
 
 export const AllIconBox = styled.ul`
   display: flex;
-  gap: 20px;
+  gap: 10px;
+  @media (min-width: 744px){    
+    gap: 20px;
+  }
 `;
 export const SingleIconBox = styled.li`
   width: 28px;

@@ -23,7 +23,7 @@ const ProjectCard = ({ project }) => {
       <ImgThumb>
         <AllProjectsImgs data={project} />
       </ImgThumb>
-      <CardOverlay className="card-overlay" to="/gallery">navštíviť galériu</CardOverlay>
+      <CardOverlay className="card-overlay" to="/gallery">Navštíviť galériu</CardOverlay>
       </ImgOverlay>
       <TextThumb>
         <h3 style={{ fontSize: '28px', textAlign: "center", color: 'white' }}>{projectName}</h3>

@@ -4,7 +4,8 @@ import BtnUp from "../../components/Buttons/BtnUp/BtnUp";
 import GalleryImgs from "../../components/GalleryImgs/GalleryImgs";
 import BtnBack from "../../components/Buttons/BtnBack/BtnBack";
 
-const GalleryPage = () => {
+const GalleryPage = ({prevLocation}) => {
+  console.log('prevLocation', prevLocation);
   
   const [showBtnUp, setShowBtnUp] = useState(false);
 

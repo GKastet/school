@@ -17,27 +17,6 @@ const AllProjects = () => {
           <ProjectCard key={project?.id} project={project} />
         ))}
       </ul>
-      
-      <div
-        style={{ outline: "1px solid green", width: "200px", height: "200px" }}
-      >
-        1
-      </div>
-      <div
-        style={{ outline: "1px solid green", width: "200px", height: "200px" }}
-      >
-        2
-      </div>
-      <div
-        style={{ outline: "1px solid green", width: "200px", height: "200px" }}
-      >
-        3
-      </div>
-      <div
-        style={{ outline: "1px solid green", width: "200px", height: "200px" }}
-      >
-        4
-      </div>
     </div>
   );
 };

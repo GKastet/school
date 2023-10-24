@@ -12,9 +12,12 @@ import {
 } from "./HeaderStyled";
 
 import Logo from "../Logo/Logo";
+import { useLocation } from "react-router-dom";
 
 
-const Header = () => {  
+const Header = () => {
+  const location = useLocation()
+  console.log(location);
   return (
     <HeaderWrapperS>
       <NavigationWrapper>
@@ -22,9 +25,9 @@ const Header = () => {
           <Logo />
         </div>
         <LinkWrapper>
-          <LinkHS to="/">Domov</LinkHS>
-          <LinkHS to="/gallery">Galéria</LinkHS>
-          <LinkHS to="/presentation">Prezentácia</LinkHS>
+          <LinkHS to="/" activeclassname="active">Domov</LinkHS>
+          <LinkHS to="/gallery" activeclassname="active">Galéria</LinkHS>
+          <LinkHS to="/presentation" activeclassname="active">Prezentácia</LinkHS>
         </LinkWrapper>
         <AllIconBox>
           <SingleIconBox>

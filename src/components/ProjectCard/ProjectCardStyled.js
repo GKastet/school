@@ -50,7 +50,7 @@ transition: transform var(--animation-time) var(--animation-cubic), opacity var(
   `
 
 export const ImgThumb = styled.div`
-  outline: 1px solid black;
+  outline: 1px solid var(--backgroundColor-header-footer);
   border-radius: 20px;
   min-width: 300px;
   height: 200px;
@@ -126,17 +126,17 @@ export const CardOverlay = styled(Link)`
   height: 100%;
   display: block;
   display: flex;
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 
   padding: 0 32px;
-  padding-top: 40px;
+  /* padding-top: 40px; */
 
   /* font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em; */
-  color: var(--p_color);
-  background-color: var(--backgroundColor);
+  color: var(--backgroundColor-header-footer);
+  background-color: var(--mainNavLogo);
   /* opacity: 0.9; */
   border-radius: 20px;
   transform: translateY(101%);
