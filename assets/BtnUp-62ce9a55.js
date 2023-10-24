@@ -1,4 +1,4 @@
-import{u as r,j as o,T as n}from"./index-121a1d37.js";const t=r.button`
+import{u as r,j as o,T as t}from"./index-0b69af99.js";const a="/school/assets/1_Merkur_title_horiz_WebP-8ee04ba5.webp",n="/school/assets/2_SolarHydraulic_title_horiz_WebP-3962cc45.webp",l="/school/assets/3_FuelCellCar_title-horiz_WebP-a50c2368.webp",c="/school/assets/4_MarsRunner_title-horiz_WebP-81b3573f.webp",e=r.button`
   outline: 1px solid var(--blue-hover);
   position: fixed;  
   right: 10px;  
@@ -38,4 +38,4 @@ import{u as r,j as o,T as n}from"./index-121a1d37.js";const t=r.button`
   @media (min-width: 1280px){
     right: 40px;
   }  
-`,a=()=>{function i(){window.scrollTo({top:0,behavior:"smooth"})}return o.jsx(t,{type:"button",onClick:i,children:o.jsx(n,{size:40})})};export{a as B};
+`,p=()=>{function i(){window.scrollTo({top:0,behavior:"smooth"})}return o.jsx(e,{type:"button",onClick:i,children:o.jsx(t,{size:40})})};export{p as B,c as F,l as a,n as b,a as c};
