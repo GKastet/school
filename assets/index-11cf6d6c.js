@@ -1,4 +1,4 @@
-import{h as d,u as a,L as g,j as e,r as c}from"./index-0b69af99.js";import{P as s,T as x,a as j}from"./index-8bb77c9a.js";import{F as h,a as f,b as y,c as b,B as P}from"./BtnUp-62ce9a55.js";const l=d`
+import{h as d,u as a,L as g,j as e,r as c}from"./index-e82dadc5.js";import{P as s,T as x,a as j}from"./index-323c28c4.js";import{F as h,a as f,b as y,c as b,B as P}from"./BtnUp-e7dabf5e.js";const l=d`
   0% {
     opacity: 0;
   }
@@ -62,7 +62,7 @@ transition: transform var(--animation-time) var(--animation-cubic), opacity var(
   
   /* Задаем начальную прозрачность нулевой */
   opacity: 0;
-  animation: ${l} 0.3s ease-in-out 2s forwards;
+  animation: ${l} 0.3s linear 2s forwards;
   @media (min-width: 744px) {
     font-size: 20px;
   }

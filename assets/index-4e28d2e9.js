@@ -1,10 +1,10 @@
-import{u as l,j as e,G as h,r as d,a as F}from"./index-0b69af99.js";import{P as a,T as B,a as R}from"./index-8bb77c9a.js";import{F as I,a as L,b as z,c as N,B as S}from"./BtnUp-62ce9a55.js";import{B as q}from"./BtnBack-217b0e27.js";const A=l.li`
+import{u as l,j as e,G as h,r as d,a as F}from"./index-e82dadc5.js";import{P as a,T as B,a as R}from"./index-323c28c4.js";import{F as I,a as L,b as z,c as N,B as S}from"./BtnUp-e7dabf5e.js";import{B as q}from"./BtnBack-2a9b707d.js";const A=l.li`
   border-radius: 20px;
   /* box-shadow: none; */
   cursor: zoom-in;
   transition: all 1000 ms linear;  
   &:hover {
-    box-shadow: 0px 0px 12px 9px rgba(196, 33, 196, 0.82);
+    box-shadow: 0px 0px 12px 9px rgba(3, 152, 149, 0.8);
   }
 `,T=l.div`
   outline: 1px solid var(--backgroundColor-header-footer);

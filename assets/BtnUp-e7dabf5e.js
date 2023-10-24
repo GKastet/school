@@ -1,4 +1,4 @@
-import{u as r,j as o,T as t}from"./index-0b69af99.js";const a="/school/assets/1_Merkur_title_horiz_WebP-8ee04ba5.webp",n="/school/assets/2_SolarHydraulic_title_horiz_WebP-3962cc45.webp",l="/school/assets/3_FuelCellCar_title-horiz_WebP-a50c2368.webp",c="/school/assets/4_MarsRunner_title-horiz_WebP-81b3573f.webp",e=r.button`
+import{u as r,j as o,T as t}from"./index-e82dadc5.js";const a="/school/assets/1_Merkur_title_horiz_WebP-8ee04ba5.webp",n="/school/assets/2_SolarHydraulic_title_horiz_WebP-3962cc45.webp",l="/school/assets/3_FuelCellCar_title-horiz_WebP-a50c2368.webp",c="/school/assets/4_MarsRunner_title-horiz_WebP-81b3573f.webp",e=r.button`
   outline: 1px solid var(--blue-hover);
   position: fixed;  
   right: 10px;  

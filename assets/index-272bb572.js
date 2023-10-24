@@ -1,4 +1,4 @@
-import{u as t,a as i,r as n,j as e}from"./index-0b69af99.js";import{a,T as d}from"./index-8bb77c9a.js";import{B as c}from"./BtnBack-217b0e27.js";const l="/school/assets/presentation_Merkur-82c30e1f.mp4",p=t.div`
+import{u as t,a as i,r as n,j as e}from"./index-e82dadc5.js";import{a,T as d}from"./index-323c28c4.js";import{B as c}from"./BtnBack-2a9b707d.js";const l="/school/assets/presentation_Merkur-82c30e1f.mp4",p=t.div`
 display: flex;
 align-items: center;
 justify-content: center;
