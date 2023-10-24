@@ -6,7 +6,7 @@ export const GalleryItemLi = styled.li`
   cursor: zoom-in;
   transition: all 1000 ms linear;  
   &:hover {
-    box-shadow: 0px 0px 12px 9px rgba(196, 33, 196, 0.82);
+    box-shadow: 0px 0px 12px 9px rgba(3, 152, 149, 0.8);
   }
 `;
 

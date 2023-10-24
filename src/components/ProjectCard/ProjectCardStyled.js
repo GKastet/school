@@ -100,7 +100,7 @@ export const ProjectText = styled.p`
   
   /* Задаем начальную прозрачность нулевой */
   opacity: 0;
-  animation: ${fadeIn} 0.3s ease-in-out 2s forwards;
+  animation: ${fadeIn} 0.3s linear 2s forwards;
   @media (min-width: 744px) {
     font-size: 20px;
   }

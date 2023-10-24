@@ -1,7 +1,6 @@
 import PropTypes from "prop-types";
 import { ImgTagS } from "./GalleryImgsFuncStyled";
 
-import Img2 from "../../images/64WebP.webp";
 import FotoProject1 from "../../images/1_Merkur_title_horiz_WebP.webp";
 
 import FotoProject2 from "../../images/2_SolarHydraulic_title_horiz_WebP.webp";

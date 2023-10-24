@@ -24,11 +24,13 @@ export const TitleS = styled.h2`
 display: block;
 text-align: center;
 margin-bottom: 30px;
-font-size: 30px;
-font-size: 44px;
+font-size: 38px;
 letter-spacing: 0.1em;
 text-decoration: underline;
 color: var(--white);
+@media (min-width: 744px){    
+  font-size: 44px;
+  }
 `
 
 
