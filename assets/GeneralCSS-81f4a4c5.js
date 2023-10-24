@@ -1,4 +1,4 @@
-import{u as e}from"./index-4855afe1.js";const i="/school/assets/bcg1WebP-b6ce7dc7.webp",a=e.section`
+import{u as e}from"./index-cff325b5.js";const i="/school/assets/bcg1WebP-b6ce7dc7.webp",a=e.section`
   /* outline: 1px solid blue; */
   padding: 20px 10px;
   position: relative;
