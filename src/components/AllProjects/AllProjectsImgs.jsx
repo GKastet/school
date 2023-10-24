@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import FotoProject1 from "../../images/1_Merkur_title_horiz_webP.webp";
+import FotoProject1 from "../../images/2_SolarHydraulic_title_horiz_webP.webp";
 import FotoProject2 from "../../images/2_SolarHydraulic_title_horiz_webP.webp";
 import FotoProject3 from "../../images/3_FuelCellCar_title-horiz_webP.webp";
 import FotoProject4 from "../../images/4_MarsRunner_title-horiz_webP.webp";
