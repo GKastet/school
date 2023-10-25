@@ -29,6 +29,7 @@ import FotoProject101 from "../../images/10-101_WebP.webp"; //22
 import FotoProject11 from "../../images/11_ProBot_title_horiz_WebP.webp"; //22,23
 import FotoProject12 from "../../images/12_DobotMagician_title_horiz_WebP.webp"; //24,25
 import FotoProject13 from "../../images/13_MechanikaAutomobilu_title_horiz_WebP.webp"; //26,27
+
 import FotoProject14 from "../../images/14_FicherTechnik_title_horiz_WebP.webp"; //28
 import FotoProject141 from "../../images/14-141_WebP.webp"; //29
 

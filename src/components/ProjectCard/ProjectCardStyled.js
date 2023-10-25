@@ -32,22 +32,22 @@ export const CardWrapper = styled.li`
   border-right: 12px solid var(--hover);
   /* border-right: 12px solid #ffff53; */
   /* border-bottom: 12px solid red; */
-  
+
   @media (min-width: 744px) {
     flex-wrap: nowrap;
   }
 `;
 
-
 export const ImgOverlay = styled.div`
-position: relative;
-transition: transform var(--animation-time) var(--animation-cubic), opacity var(--animation-time) var(--animation-cubic);
+  position: relative;
+  transition: transform var(--animation-time) var(--animation-cubic),
+    opacity var(--animation-time) var(--animation-cubic);
   &:hover .card-overlay {
     transform: translateY(0);
     opacity: 0.8;
     /* pointer-events: none; */
   }
-  `
+`;
 
 export const ImgThumb = styled.div`
   outline: 1px solid var(--backgroundColor-header-footer);
@@ -64,6 +64,12 @@ export const ImgThumb = styled.div`
 export const TextThumb = styled.div`
   width: 100%;
   /* z-index: 3; */
+`;
+
+export const ProjectImg = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 `;
 
 // export const ProjectText = styled.p`
@@ -87,7 +93,6 @@ export const TextThumb = styled.div`
 //     }
 //   }
 
-
 // `;
 
 export const ProjectText = styled.p`
@@ -97,7 +102,7 @@ export const ProjectText = styled.p`
   letter-spacing: 0.12em;
   font-style: italic;
   color: var(--text-color);
-  
+
   /* Задаем начальную прозрачность нулевой */
   opacity: 0;
   animation: ${fadeIn} 0.3s linear 2s forwards;
@@ -140,12 +145,12 @@ export const CardOverlay = styled(Link)`
   /* opacity: 0.9; */
   border-radius: 20px;
   transform: translateY(101%);
-  transition: transform var(--animation-time) var(--animation-cubic), opacity var(--animation-time) var(--animation-cubic);
+  transition: transform var(--animation-time) var(--animation-cubic),
+    opacity var(--animation-time) var(--animation-cubic);
   opacity: 0;
   font-size: 16px;
   font-weight: 700;
   @media (min-width: 744px) {
     font-size: 20px;
   }
-  
 `;
