@@ -5,18 +5,18 @@ import FotoProject1 from "../../images/1_Merkur_title_horiz_WebP.webp"; //1
 
 import FotoProject2 from "../../images/2_SolarHydraulic_title_horiz_WebP.webp"; //2
 import FotoProject21 from "../../images/2-21_WebP.webp"; //3
-import FotoProject22 from "../../images/2_22_WebP.webp"; //4
+import FotoProject22 from "../../images/2-22_WebP.webp"; //4
 
 import FotoProject3 from "../../images/3_FuelCellCar_title-horiz_WebP.webp"; //5
-import FotoProject31 from "../../images/3_31_WebP.webp"; //6
-import FotoProject32 from "../../images/3_32_WebP.webp"; //7
+import FotoProject31 from "../../images/3-31_WebP.webp"; //6
+import FotoProject32 from "../../images/3-32_WebP.webp"; //7
 
 import FotoProject4 from "../../images/4_MarsRunner_title-horiz_WebP.webp"; //8
-import FotoProject41 from "../../images/4_41_WebP.webp"; //9
+import FotoProject41 from "../../images/4-41_WebP.webp"; //9
 
 import FotoProject5 from "../../images/5_EiTech_title_horiz_WebP.webp"; //10
-import FotoProject51 from "../../images/5_51_WebP.webp"; //11
-import FotoProject52 from "../../images/5_52_WebP.webp"; //12
+import FotoProject51 from "../../images/5-51_WebP.webp"; //11
+import FotoProject52 from "../../images/5-52_WebP.webp"; //12
 
 import FotoProject6 from "../../images/6_BoffinIIGames_title_horiz_WebP.webp"; //13, 14
 import FotoProject7 from "../../images/7_BoffinIIGames_title_horiz_WebP.webp"; //15, 16
@@ -24,13 +24,13 @@ import FotoProject8 from "../../images/8_BoffinI500_title_horiz_WebP.webp"; //17
 import FotoProject9 from "../../images/9_BoffinIIMotion_title_horiz_WebP.webp"; //19, 20
 
 import FotoProject10 from "../../images/10_BoffinIIMyHome_title_horiz_WebP.webp"; //21
-import FotoProject101 from "../../images/10_101_WebP.webp"; //22
+import FotoProject101 from "../../images/10-101_WebP.webp"; //22
 
 import FotoProject11 from "../../images/11_ProBot_title_horiz_WebP.webp"; //22,23
 import FotoProject12 from "../../images/12_DobotMagician_title_horiz_WebP.webp"; //24,25
 import FotoProject13 from "../../images/13_MechanikaAutomobilu_title_horiz_WebP.webp"; //26,27
 import FotoProject14 from "../../images/14_FicherTechnik_title_horiz_WebP.webp"; //28
-import FotoProject141 from "../../images/14_141_WebP.webp"; //29
+import FotoProject141 from "../../images/14-141_WebP.webp"; //29
 
 const GalleryImgsFunc = ({ index, data, isOpen = false, onOpenModal }) => {
   // console.log('dataFunc: ', index);
