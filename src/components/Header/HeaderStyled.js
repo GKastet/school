@@ -4,8 +4,7 @@ import { AiOutlineInstagram } from "react-icons/ai";
 import { FaTelegramPlane } from "react-icons/fa";
 import { TbMail } from "react-icons/tb";
 
-export const HeaderWrapperS = styled.header`
-  /* outline: 1px solid red; */
+export const HeaderWrapperS = styled.header`  
   width: 100%;
   background-color: var(--backgroundColor-header-footer);
   display: flex;
@@ -18,17 +17,16 @@ export const HeaderWrapperS = styled.header`
   z-index: 1;
 `;
 
-export const NavigationWrapper = styled.div`
-  /* outline: 1px solid green; */
+export const NavigationWrapper = styled.div`  
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
   width: 100%;
-  @media (min-width: 744px) and (max-width: 1279px) {    
+  @media (min-width: 744px) and (max-width: 1279px) {
     max-width: 740px;
   }
-  @media (min-width: 1280px){    
+  @media (min-width: 1280px) {
     max-width: 1280px;
   }
 `;
@@ -36,7 +34,7 @@ export const NavigationWrapper = styled.div`
 export const LinkWrapper = styled.div`
   display: flex;
   gap: 10px;
-  @media (min-width: 744px){    
+  @media (min-width: 744px) {
     gap: 40px;
   }
 `;
@@ -51,26 +49,26 @@ export const LinkHS = styled(NavLink)`
     color: var(--hover);
   }
   &.active {
-    color: var(--hover); // Здесь укажите цвет для активной ссылки
+    color: var(--hover);
   }
-  @media (min-width: 744px){    
-    font-size: 18px;   
+  @media (min-width: 744px) {
+    font-size: 18px;
   }
 `;
 
 export const AllIconBox = styled.ul`
   display: flex;
   gap: 10px;
-  @media (min-width: 744px){    
+  @media (min-width: 744px) {
     gap: 20px;
   }
 `;
 export const SingleIconBox = styled.li`
   width: 28px;
   height: 28px;
-  @media (min-width: 744px){    
+  @media (min-width: 744px) {
     width: 40px;
-    height: 40px;    
+    height: 40px;
   }
 `;
 
@@ -82,8 +80,8 @@ const IconStyles = `
 `;
 
 export const AiOutlineInstagramS = styled(AiOutlineInstagram)`
-  ${IconStyles}  
-  fill: var(--mainNavLogo);  
+  ${IconStyles}
+  fill: var(--mainNavLogo);
   transition: fill 350ms linear;
   &:hover {
     fill: var(--hover);

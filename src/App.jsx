@@ -2,7 +2,7 @@ import { Suspense, lazy } from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import Loader from './components/Loader/Loader'
 import Layout from './pages/Layout'
-import './App.css'
+
 
 const HomePage = lazy(()=> import ('./pages/HomePage'))
 const GalleryPage = lazy(()=> import ('./pages/GalleryPage'))

@@ -14,9 +14,8 @@ import {
 import Logo from "../Logo/Logo";
 import { useLocation } from "react-router-dom";
 
-
 const Header = () => {
-  const location = useLocation()  
+  const location = useLocation();
   return (
     <HeaderWrapperS>
       <NavigationWrapper>
@@ -24,9 +23,23 @@ const Header = () => {
           <Logo />
         </div>
         <LinkWrapper>
-          <LinkHS to="/" state={{from: location}} activeclassname="active">Domov</LinkHS>
-          <LinkHS to="/gallery" state={{from: location}} activeclassname="active">Galéria</LinkHS>
-          <LinkHS to="/presentation" state={{from: location}} activeclassname="active">Prezentácia</LinkHS>
+          <LinkHS to="/" state={{ from: location }} activeclassname="active">
+            Domov
+          </LinkHS>
+          <LinkHS
+            to="/gallery"
+            state={{ from: location }}
+            activeclassname="active"
+          >
+            Galéria
+          </LinkHS>
+          <LinkHS
+            to="/presentation"
+            state={{ from: location }}
+            activeclassname="active"
+          >
+            Prezentácia
+          </LinkHS>
         </LinkWrapper>
         <AllIconBox>
           <SingleIconBox>
@@ -51,7 +64,7 @@ const Header = () => {
           </SingleIconBox>
           <SingleIconBox>
             <IconLink
-              to="mailto:liza.milarom@gmail.com"  
+              to="mailto:liza.milarom@gmail.com"
               target="_blank"
               rel="noreferrer noopener"
               aria-label="mail"

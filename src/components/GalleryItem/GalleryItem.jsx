@@ -1,22 +1,17 @@
 import PropTypes from "prop-types";
-import { GalleryItemLi, ImgThumb } from "./GalleryItemStyled";
-import GalleryImgsFunc from "../GalleryImgs/GalleryImgsFunc";
+import { GalleryItemLi, ImgStyled, ImgThumb } from "./GalleryItemStyled";
 
 const GalleryItem = ({ index, data, onOpenModal }) => {
-  // console.log("index", index);
-  // const handleSetImgIdx = () =>{
-  //   console.log(index);
-  //   onOpenModal(index+1)
+  const { imgSrc, imgAlt } = data;
 
-  // }
   return (
     <GalleryItemLi>
       <ImgThumb
-      //  onClick={handleSetImgIdx}
-       >
-        <GalleryImgsFunc data={data} index={index+1}
-         onOpenModal={onOpenModal}
-         />        
+        onClick={() => {
+          onOpenModal({ idx: index });
+        }}
+      >
+        <ImgStyled src={imgSrc} alt={imgAlt} type="image/webp" loading="lazy" />
       </ImgThumb>
     </GalleryItemLi>
   );
@@ -24,11 +19,11 @@ const GalleryItem = ({ index, data, onOpenModal }) => {
 
 GalleryItem.propTypes = {
   index: PropTypes.number,
-  data: PropTypes.shape({    
+  data: PropTypes.shape({
+    imgSrc: PropTypes.string.isRequired,
     imgAlt: PropTypes.string.isRequired,
-  }).isRequired,  
-  onOpenModal: PropTypes.func.isRequired,  
+  }).isRequired,
+  onOpenModal: PropTypes.func.isRequired,
 };
 
 export default GalleryItem;
-

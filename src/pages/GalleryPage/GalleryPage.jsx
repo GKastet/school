@@ -7,30 +7,30 @@ import { useLocation } from "react-router-dom";
 import { useRef } from "react";
 
 const GalleryPage = () => {
-  const location = useLocation()  
-  const backLinkRef = useRef(location.state?.from)
+  const location = useLocation();
+  const backLinkRef = useRef(location.state?.from);
   const [showBtnUp, setShowBtnUp] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) { // Adjust the scroll threshold as needed
+      if (window.scrollY > 100) {
         setShowBtnUp(true);
       } else {
         setShowBtnUp(false);
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
   return (
     <PageWrapper>
-      <BtnBack location={backLinkRef}/>
-      <GalleryImgs/>      
-      {showBtnUp && <BtnUp/>}               
+      <BtnBack location={backLinkRef} />
+      <GalleryImgs />
+      {showBtnUp && <BtnUp />}
     </PageWrapper>
   );
 };

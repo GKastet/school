@@ -17,7 +17,7 @@ const Presentation = () => {
         <VideoThumb>
           <video width="100%" height="100%" controls style={{display: "block"}}>
             <source src={Video} type="video/mp4" />
-            Ваш браузер не поддерживает видео.
+            Your browser does not support video.
           </video>
         </VideoThumb>
       </VideoWrapper>

@@ -5,11 +5,8 @@ import { FaTelegramPlane } from "react-icons/fa";
 import { TbMail } from "react-icons/tb";
 
 export const FooterWrapperS = styled.footer`
-  /* outline: 1px solid red; */
-  /* margin: 0 auto; */
   background-color: var(--backgroundColor-header-footer);
   width: 100%;
-  /* width: 700px; */
   padding: 40px 0;
   display: flex;
   flex-direction: column;
@@ -18,7 +15,7 @@ export const FooterWrapperS = styled.footer`
   gap: 30px;
 `;
 
-export const AllIconBox = styled.ul`  
+export const AllIconBox = styled.ul`
   display: flex;
   gap: 20px;
 `;

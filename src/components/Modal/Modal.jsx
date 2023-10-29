@@ -1,20 +1,27 @@
 import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
-import { ModalStyled } from "./ModalStyled";
-import GalleryImgsFunc from "../GalleryImgs/GalleryImgsFunc";
+import { ModalStyled, ProjectImg } from "./ModalStyled";
 import BtnClose from "../Buttons/BtnClose/BtnClose";
 import BtnPrev from "../Buttons/BtnPrev/BtnPrev";
 import BtnNext from "../Buttons/BtnNext/BtnNext";
+import { allImgsArr } from "../AllProjects/allImgsInfo";
 
 const Modal = ({ onCloseModal, modal, imgListLength }) => {
   const { isOpen, modalData } = modal;
-  // const [imageId, setImageId] = useState(Number(modalData.id));
-  // console.log("modalData.idx", modalData.idx)
-  const [imageIdx, setImageIdx] = useState(Number(modalData.idx));
-console.log('111', imageIdx);
-  const activePrevBtn = imageIdx === 1;
-  const activeNextBtn = imgListLength === imageIdx;
-  // console.log(activeNextBtn);
+
+  const [imageIdx, setImageIdx] = useState(modalData.idx);
+  
+  const [modalImg, setModalImg] = useState(allImgsArr[imageIdx]);
+  const { imgSrc, imgAlt } = modalImg;  
+
+  useEffect(() => {
+    if (imageIdx >= 0 && imageIdx < allImgsArr.length) {
+      setModalImg(allImgsArr[imageIdx]);
+    }
+  }, [imageIdx]);
+
+  const activePrevBtn = imageIdx === 0;
+  const activeNextBtn = imgListLength === imageIdx + 1;
 
   useEffect(() => {
     if (!isOpen) return;
@@ -44,15 +51,10 @@ console.log('111', imageIdx);
     }
   };
 
-  const newModalData = {
-    idx: imageIdx.toString(),
-  };
-
   return (
     <ModalStyled onClick={handleClickOverlay}>
       <div style={{ position: "relative" }}>
-        {/* <GalleryImgsFunc data={newModalData} isOpen={modal.isOpen} /> */}
-        <GalleryImgsFunc index={imageIdx} isOpen={modal.isOpen} data={newModalData}/>
+        <ProjectImg src={imgSrc} alt={imgAlt} type="image/webp" />
         <BtnClose onCloseModal={onCloseModal} />
         {!activePrevBtn && (
           <BtnPrev imageIdx={imageIdx} setImageIdx={setImageIdx} />
