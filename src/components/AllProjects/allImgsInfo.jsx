@@ -64,6 +64,12 @@ import FotoProject19 from "../../images/19_SingerTradition 2263_title_horiz.webp
 import FotoProject19n1 from "../../images/19-1.webp";//46
 import FotoProject19n2 from "../../images/19-2.webp";//47
 
+import FotoProject20 from "../../images/20_3DPrinter_title-horiz_WebP.webp";//48
+import FotoProject20n1 from "../../images/20-1_WebP.webp";//49
+import FotoProject20n2 from "../../images/20-2_WebP.webp";//50
+import FotoProject20n3 from "../../images/20-3_WebP.webp";//51
+
+
 
 
 export const allImgsArr = [
@@ -240,16 +246,7 @@ export const allImgsArr = [
         "imgAlt": "Project main foto",
         "projectName": "Boffin II green energy",
         "projectDescription": ""    
-    },
-    // {
-    //     "idx": "17",
-    //     "id": "7",
-    //     "title": true,
-    //     "imgSrc": `${FotoProject7}`,
-    //     "imgAlt": "Project main foto",
-    //     "projectName": "Boffin II green energy",
-    //     "projectDescription": ""        
-    // },
+    },    
     {
         "idx": "20",
         "id": "8",
@@ -501,5 +498,41 @@ export const allImgsArr = [
         "imgAlt": "Project main foto",
         "projectName": "Singer Tradition 2263",
         "projectDescription": ""
-    }    
+    },
+    {
+        "idx": "48",
+        "id": "20",
+        "title": true,
+        "imgSrc": `${FotoProject20}`,
+        "imgAlt": "Project main foto",
+        "projectName": "3D tlačiareň Prusa i3 MK3",
+        "projectDescription": "Veľmi ma to bavilo keď som pochopila ako to funguje a mohla som sledovať ako sa to tlačí. Až na tie problémy čo sa vyskitli napr. že sa to nevedelo držať na podložke to bolo super"
+    },
+    {
+        "idx": "49",
+        "id": "20n1",
+        "title": false,
+        "imgSrc": `${FotoProject20n1}`,
+        "imgAlt": "Project main foto",
+        "projectName": "3D tlačiareň Prusa i3 MK3",
+        "projectDescription": ""
+    },
+    {
+        "idx": "50",
+        "id": "20n2",
+        "title": false,
+        "imgSrc": `${FotoProject20n2}`,
+        "imgAlt": "Project main foto",
+        "projectName": "3D tlačiareň Prusa i3 MK3",
+        "projectDescription": ""
+    },
+    {
+        "idx": "51",
+        "id": "20n3",
+        "title": false,
+        "imgSrc": `${FotoProject20n3}`,
+        "imgAlt": "Project main foto",
+        "projectName": "3D tlačiareň Prusa i3 MK3",
+        "projectDescription": ""
+    }  
 ]
