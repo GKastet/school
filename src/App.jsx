@@ -15,8 +15,8 @@ function App() {
         <Routes>
           <Route path='/' element={<Layout/>}>
             <Route index element={<HomePage/>}></Route>
-            <Route path='/gallery' element={<GalleryPage/>}></Route>
-            <Route path='/presentation' element={<Presentation/>}></Route>
+            <Route path='gallery' element={<GalleryPage/>}></Route>
+            <Route path='presentation' element={<Presentation/>}></Route>
             <Route path='*' element={<Navigate to='/'/>}></Route>
           </Route>
         </Routes>
