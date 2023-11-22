@@ -1,4 +1,4 @@
-import{u as s,j as e,G as m,r as d,a as R}from"./index-c9735e5f.js";import{P as r,T as S,a as C}from"./index-9c5f253b.js";import{a as u,B as q}from"./BtnUp-f283c684.js";import{B as M}from"./BtnBack-784cffe1.js";const P=s.li`
+import{u as s,j as e,G as m,r as d,a as R}from"./index-fc5f0530.js";import{P as r,T as S,a as C}from"./index-9e0565e0.js";import{a as u,B as q}from"./BtnUp-add1eab7.js";import{B as M}from"./BtnBack-fcb63974.js";const P=s.li`
   border-radius: 20px;  
   cursor: zoom-in;
   transition: all 1000 ms linear;
